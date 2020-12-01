@@ -1,242 +1,242 @@
-body{
-	font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 button {
-	font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-	height: 10vh;
-	display: flex;
-	align-items: center;
-	background-color: #ff6666;
-	justify-content: space-around;
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #ff6666;
+    justify-content: space-around;
 }
 
 .nazev,
 .menu,
 .logo {
-	display: flex;
+    display: flex;
 }
 
-.nazev{
-	flex: 1;
+.nazev {
+    flex: 1;
 }
 
-.turnus{
-	padding-left: 55px;
-	color: white;
+.turnus {
+    padding-left: 55px;
+    color: white;
 }
 
-.vysocina{
-	padding-left: 10px;
-	font-size: 40px;
-	color: white;
+.vysocina {
+    padding-left: 10px;
+    font-size: 40px;
+    color: white;
 }
 
-nav{
-	flex: 2;
+nav {
+    flex: 2;
 }
 
-.logo{
-	justify-content: flex-end;
-	flex: 1;
-	background-color: transparent;
-	padding-right: 10px;
+.logo {
+    justify-content: flex-end;
+    flex: 1;
+    background-color: transparent;
+    padding-right: 10px;
 }
 
-.nadpis img{
-	padding-top: 5px;
-	width: 75px;
+.nadpis img {
+    padding-top: 5px;
+    width: 75px;
 }
 
-.home{
-	text-decoration: none;
-	color: white;
+.home {
+    text-decoration: none;
+    color: white;
 }
 
-.menu{
-	list-style: none;
-	justify-content: space-around;
-	font-weight: 400;
+.menu {
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 400;
 }
 
-.link{
-	text-decoration: none;
-	font-size: 20px;
-	color: black;
-	padding: 5px;
-	color:white;
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    color: white;
 }
 
-.link:hover{
-	color: yellow;
+.link:hover {
+    color: yellow;
 }
 
-.telo{
-	display: flex;
-	height: 85vh;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	justify-content: space-evenly;
-	overflow: hidden;
+.telo {
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
-.fotky{
-	width: 640px;
+.fotky {
+    width: 640px;
 }
 
-.fotka{
-	display: flex;
-	width: 100%;
-	filter: drop-shadow(0px 5px 3px black);
-	animation: drop 1.5s ease;
+.fotka {
+    display: flex;
+    width: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
 }
 
-.foto1, 
-.foto3, 
-#lastClone
-#firstClone{
-	opacity: 30%;
+.foto1,
+.foto3,
+#lastClone #firstClone {
+    opacity: 30%;
 }
 
-.sipky{
-	margin-top: 40px;
-	display: inline-flex;
-	width: 100%;
-	text-align: center;
-	justify-content: space-around;
+.sipky {
+    margin-top: 40px;
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
 }
 
-.prava{
-	width: 70%;
+.prava {
+    width: 70%;
 }
 
-input:focus{
+#prevBtn {
+    width: 50%;
+}
+
+#nextBtn {
+    width: 50%;
+}
+
+.dot {
+    width: 1%;
+}
+
+input:focus {
     outline: none;
 }
 
-.leva{
-	width: 70%;
+.leva {
+    width: 70%;
 }
 
-.info{
-	display: flex;
-	align-items: center;
-	width: 900px;
-	justify-content: space-between;
-	flex-direction: column;
+.info {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.text{
-	text-align: justify;
-	margin: auto;
-	font-size: 22px;
-	color: #585772;
-	margin-right: 20px;
+.text {
+    text-align: justify;
+    margin: auto;
+    font-size: 22px;
+    color: #585772;
+    margin-right: 20px;
 }
 
-.tlacitko{
-	float: right;
-	background-color: transparent;
-	color: #ff6666;
-	height: 30px;
-	border: 2px solid #ff6666;
-	width: 150px;
-	height: 50px;
-	cursor: pointer;
-	font-size: 16px;
-	margin-top: 25px;
+.tlacitko {
+    float: right;
+    background-color: transparent;
+    color: #ff6666;
+    height: 30px;
+    border: 2px solid #ff6666;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 25px;
 }
 
-.tlacitko:focus{
+.tlacitko:focus {
     outline: none;
 }
 
-.panel{
-	height: 5vh;
-	background-color: #666;
-;
-	text-align: center;
+.panel {
+    height: 5vh;
+    background-color: #666;
+    ;
+    text-align: center;
 }
 
-.panel p{
-	color: white;
-	padding-top: 10px;
+.panel p {
+    color: white;
+    padding-top: 10px;
 }
 
 @media (max-width: 1000px) {
-	header{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr 1fr;
-		height: 15vh;
-	}
-
-	.nazev{
-		grid-area: "prava";
-	}
-
-	.logo{
-		grid-area: "leva";
-		grid-column: 2/3;
-		grid-row: 1/2;
-	}
-
-	nav{
-		grid-area: "pod";
-		grid-column: 1/3;
-		background-color: #666;
-		height: 5vh;
-		align-self: center;
-	}
-
-	.menu{
-		text-align: center;
-		align-items: center;
-		height: 100%;
-	}
-
-	.kapitola{
-		margin-top: 30px;
-	}
-
-	.telo{
-		height: 80vh;
-	}
-
-	.info{
-		width: 640px;
-	}
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        height: 15vh;
+    }
+    .nazev {
+        grid-area: "prava";
+    }
+    .logo {
+        grid-area: "leva";
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    nav {
+        grid-area: "pod";
+        grid-column: 1/3;
+        background-color: #666;
+        height: 5vh;
+        align-self: center;
+    }
+    .menu {
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+    .kapitola {
+        margin-top: 30px;
+    }
+    .telo {
+        height: 80vh;
+    }
+    .info {
+        width: 640px;
+    }
 }
 
 @media (max-width: 650px) {
-	.info{
-		width: 480px;
-	}
-
-	.fotky{
-		width: 480px;
-	}
-
-	.foto1,
-	.foto2,
-	.foto3{
-		width: 480px;
-	}
-
-	.telo{
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-	}
-
+    .info {
+        width: 480px;
+    }
+    .fotky {
+        width: 480px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 480px;
+    }
+    .telo {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 }

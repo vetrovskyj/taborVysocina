@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tábor Vysočina 3. turnus</title>
+	<link rel="icon" href="images/logo.png" type="image/x-icon">
+	<meta name="Keywords" content="Tábor, tábor Vysočina, 3. turnus, letní tábor,Vysočina,PČR,děti,hry">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/Kontakt.css">
+	<script src="https://api.mapy.cz/loader.js"></script>
+	<script>Loader.load()</script>
+</head>
+<body>
+
+<header>
+	<div class="nazev">
+		<a class="home" href="index.html">
+			<div class="radky">
+				<h1 class="vysocina">Vysočina</h1>
+				<h2 class="turnus">3. turnus</h2>
+			</div>
+		</a>
+	</div>
+	<nav>
+		<ul class="menu">
+			<li><a class="link" id="odsazeni" href="O_Tabore.html">Informace</a></li>
+			<li><a class="link" href="Lide.html">Lidé</a></li>
+			<li><a class="link" href="Vylety.html">Výlety</a></li>
+			<li><a class="link" href="Galerie.html">Galerie</a></li>
+			<li><a class="link" href="Kontakt.html">Kontakt</a></li>
+		</ul>
+	</nav>
+	<div class="logo">
+		<a class="nadpis" href="index.html">
+			<img src="images/logo.png" alt="Vysočina logo">
+		</a>
+	</div>
+</header>
+
+<main class="telo">
+	<div class="kontakt">
+		<div class="adress">
+			<div>
+			<h1 class="titulek1">Kde nás najdete?</h1>
+			</div>	
+			<div id="map"></div>
+			<div>
+			<p id="adresa">Adresa: Lesní 66,
+			Nové Město na Moravě,
+			592 31</p>
+			</div>	
+	<script type="text/javascript">
+		var center = SMap.Coords.fromWGS84(16.064546, 49.574772);
+		var m = new SMap(JAK.gel("map"), center, 14);
+		m.addDefaultLayer(SMap.DEF_BASE).enable();
+		m.addDefaultControls();
+
+		var layer = new SMap.Layer.Marker();
+		m.addLayer(layer);
+		layer.enable();
+
+		var options = {};
+		var marker = new SMap.Marker(center, "myMarker", options);
+		layer.addMarker(marker);  	      
+	</script>
+		</div>
+		<div class="formular">
+			<h1 class="titulek2">Napište nám email</h1>
+			<form class="pole" action="kontaktni_formular.php" method="post" netlify>
+				<input id="jmeno" type="text" name="jmeno" placeholder="Jméno a příjmení" required>
+				<input id="email" type="text" name="email" placeholder="Vaše emailová adresa" required>
+				<input id="predmet" type="text" name="predmet" placeholder="Předmět zprávy">
+				<textarea id="zprava" name="zprava" placeholder="Napište nám zprávu"></textarea>
+				<div id="button">
+				<input type="submit" name="submit" class="tlacitko"></input>
+				</div>
+			</form>
+		</div>
+	</div>
+</main>
+
+<footer class="panel">
+	<p>Copyright &copy 2020, Tábor Vysočina 3. turnus</p>
+</footer>

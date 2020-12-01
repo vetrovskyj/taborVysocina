@@ -1,0 +1,245 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	background-color: #ff6666;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+
+.nazev,
+.menu,
+.logo {
+	display: flex;
+}
+
+.nazev{
+	flex: 1;
+}
+
+.turnus{
+	padding-left: 55px;
+	color: white;
+}
+
+.vysocina{
+	padding-left: 10px;
+	font-size: 40px;
+	color: white;
+}
+
+nav{
+	flex: 2;
+}
+
+.logo{
+	justify-content: flex-end;
+	flex: 1;
+	background-color: transparent;
+	padding-right: 10px;
+}
+
+.nadpis img{
+	padding-top: 5px;
+	width: 75px;
+}
+
+.home{
+	text-decoration: none;
+	color: white;
+}
+
+.menu{
+	list-style: none;
+	justify-content: space-around;
+	font-weight: 400;
+}
+
+.link{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 5px;
+	color:white;
+}
+
+.link:hover{
+	color: yellow;
+}
+
+.telo{
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 300px auto 300px;
+	grid-template-rows: 300px 300px 300px 300px 300px;
+	grid-row-gap: 30px;
+}
+
+.jedna{
+	background-color: #ff66664d;
+	box-shadow: 5px 5px 5px 5px #666;
+	padding: 10px;
+	grid-column: 1/3;
+	display: flex;
+}
+
+.dva{
+	box-shadow: 15px solid #666;
+	padding: 10px;
+	box-shadow: 5px 5px 5px 5px #666;
+	grid-column: 2/4;
+	display: flex;
+}
+
+.tri{
+	background-color: #ff66664d;
+	box-shadow: 5px 5px 5px 5px #666;
+	padding: 10px;
+	grid-column: 1/3;
+	grid-row: 3/4;
+	display: flex;
+}
+
+.ctyri{
+	box-shadow: 5px 5px 5px 5px #666;
+	padding: 10px;
+	grid-column: 2/4;
+	grid-row: 4/5;
+	display: flex;
+}
+
+.osoba{
+	text-align: justify;
+	margin: 0 10px 0 10px;
+}
+
+.osoba img{
+	width: 150px;
+	margin-left: 156px;
+}
+
+/*.telo{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 4fr;
+	align-items: center;
+	justify-items: center;
+}
+
+.vedeni{
+	display: inline-flex;
+	grid-column: 1/3;
+	grid-row: 1/2;
+	width: 1851px;
+	justify-content: space-between;
+}
+
+.kluci{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 900px;
+	column-gap: 20px;
+}
+
+.holky{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 900px;
+	column-gap: 20px;
+}
+
+.osoba img,
+.sef img{
+	width: 150px;
+}
+
+.osoba{
+	display: flex;
+	border: solid;
+	align-items: center;
+	text-align: justify;
+}
+
+.sef{
+	border: solid;
+	align-items: center;
+	text-align: justify;
+}
+
+.sef img{
+	margin-left: 156px;
+}
+
+#posledni{
+	grid-column: 1/3;
+	text-align: center;
+	align-items: center;
+}*/
+
+.panel{
+	height: 5vh;
+	background-color: #666;
+	text-align: center;
+}
+
+.panel p{
+	color: white;
+	padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+	header{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+		height: 15vh;
+	}
+
+	.nazev{
+		grid-area: "prava";
+	}
+
+	.logo{
+		grid-area: "leva";
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	nav{
+		grid-area: "pod";
+		grid-column: 1/3;
+		background-color: #666;
+		height: 5vh;
+		align-self: center;
+	}
+
+	.menu{
+		text-align: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.kapitola{
+		margin-top: 30px;
+	}
+
+	.telo{
+		height: 80vh;
+	}
+}

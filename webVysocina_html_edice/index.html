@@ -37,43 +37,70 @@
     </header>
 
     <main class="telo">
-        <div class="fotky">
-            <div class="fotka">
-                <img class="foto3" id="lastClone" src="images/foto3.jpg" alt="foto3">
-                <img class="foto1" src="images/foto1copy.jpg" alt="foto1">
-                <img class="foto2" src="images/foto2.jpg" alt="foto2">
-                <img class="foto3" src="images/foto3.jpg" alt="foto3">
-                <img class="foto1" id="firstClone" src="images/foto1copy.jpg" alt="foto1">
+        <div class="top-site">
+            <div class="fotky">
+                <div class="fotka">
+                    <img class="foto3" id="lastClone" src="images/foto3.jpg" alt="foto3">
+                    <img class="foto1" src="images/foto1copy.jpg" alt="foto1">
+                    <img class="foto2" src="images/foto2.jpg" alt="foto2">
+                    <img class="foto3" src="images/foto3.jpg" alt="foto3">
+                    <img class="foto1" id="firstClone" src="images/foto1copy.jpg" alt="foto1">
+                </div>
+
+                <div class="sipky">
+                    <div class="leva">
+                        <input id="prevBtn" type="image" src="images/leva.png" name="leva" alt="leva-sipka" />
+                    </div>
+                    <div class="tecka">
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                    </div>
+                    <div class="prava">
+                        <input id="nextBtn" type="image" src="images/prava.png" name="prava" alt="prava-sipka" />
+                    </div>
+                </div>
             </div>
 
-            <div class="sipky">
-                <div class="leva">
-                    <input id="prevBtn" type="image" src="images/leva.png" name="leva" alt="leva-sipka" />
+            <script src="js/app.js"></script>
+
+            <div class="info">
+                <div class="text">
+                    <h2>Zábava. Zážitky. Vysočina</h2>
+                    <p>Tábor Vysočina je policejní tábor s dlouholetou tradicí, skvělou partou, hrami, péčí o děti a hlavně zábavou. Areál pobytu se nachází na Vysočině. K dispozici máme 3 hřiště, hlavní budovu, chatky a krásnou přírodu.</p>
                 </div>
-                <div class="tecka">
-                    <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
-                    <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
-                    <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
-                    <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
-                    <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
-                </div>
-                <div class="prava">
-                    <input id="nextBtn" type="image" src="images/prava.png" name="prava" alt="prava-sipka" />
+                <div class="btn">
+                    <button class="tlacitko" onclick="location.href='O_Tabore.html'" type="button">Čti více</button>
                 </div>
             </div>
         </div>
-
-        <script src="js/app.js"></script>
-
-        <div class="info">
-            <div class="text">
-                <p>Tábor Vysočina je policejní tábor s dlouholetou tradicí, skvělou partou, hrami, péčí o děti a hlavně zábavou. Areál pobytu se nachází na Vysočině. K dispozici máme 3 hřiště, hlavní budovu, chatky a krásnou přírodu.</p>
-            </div>
-            <div class="btn">
-                <button class="tlacitko" onclick="location.href='O_Tabore.html'" type="button">Čti více</button>
+        <div class="bottom-site">
+            <div class="boxes">
+                <div class="box">
+                    <img alt="ikona kamaradu" src="./images/kamaradi_ikona.svg" width="100">
+                    <div class="box-desc">
+                        <h2>Kamarádi</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img alt="ikona her" src="./images/catapult_ikona.svg" width="100">
+                    <div class="box-desc">
+                        <h2>Hry</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img alt="ikona dobrodruzstvi" src="./images/dobro_ikona.svg" width="100">
+                    <div class="box-desc">
+                        <h2>Dobrodružství</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
 
     <footer class="panel">

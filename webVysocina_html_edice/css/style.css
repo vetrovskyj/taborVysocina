@@ -2,10 +2,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-button {
-    font-family: 'Poppins', sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -82,6 +78,7 @@ nav {
 
 .telo {
     margin: auto;
+    height: 100%;
 }
 
 .fotky {
@@ -102,7 +99,7 @@ nav {
 }
 
 .sipky {
-    margin-top: 40px;
+    margin-top: 30px;
     display: inline-flex;
     width: 100%;
     text-align: center;
@@ -110,19 +107,19 @@ nav {
 }
 
 .prava {
-    width: 70%;
+    width: 80%;
 }
 
 #prevBtn {
-    width: 50%;
+    width: 70%;
 }
 
 #nextBtn {
-    width: 50%;
+    width: 70%;
 }
 
 .dot {
-    width: 1%;
+    width: 1.5%;
 }
 
 input:focus {
@@ -130,13 +127,13 @@ input:focus {
 }
 
 .leva {
-    width: 70%;
+    width: 80%;
 }
 
 .info {
     display: flex;
     align-items: center;
-    width: 900px;
+    width: 700px;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -146,16 +143,27 @@ input:focus {
     margin: auto;
     font-size: 22px;
     color: #585772;
-    margin-right: 20px;
 }
 
-.text h2 {
+.text-heading {
+    display: flex;
+}
+
+.text-heading h2 {
+    color: #585772;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.text-heading h2:last-child {
+    padding-left: 5px;
     color: #ff6666;
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .tlacitko {
+    text-decoration: none;
     float: right;
     background-color: transparent;
     color: #ff6666;
@@ -164,8 +172,12 @@ input:focus {
     width: 150px;
     height: 50px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tlacitko:focus {
@@ -183,7 +195,7 @@ input:focus {
 }
 
 .bottom-site {
-    height: 95vh;
+    height: 100%;
 }
 
 .boxes {
@@ -192,7 +204,6 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
     grid-template-rows: 1fr 4fr;
-    margin: 0 0 10em 0;
     color: #585772;
 }
 
@@ -202,14 +213,14 @@ input:focus {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
     grid-row: 2/3;
     margin-bottom: -5em;
-    padding: 25px;
+    padding: 40px;
     font-size: 22px;
 }
 
 .box-desc h2 {
+    text-align: center;
     padding: 25px 0;
     font-size: 1.5em;
 }
@@ -236,6 +247,105 @@ input:focus {
 .panel p {
     color: white;
     padding-top: 10px;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#prev {
+    position: fixed;
+    z-index: 1000;
+    top: 400px;
+    left: 200px;
+    width: 50px;
+    display: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#prev.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 6px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#next {
+    position: fixed;
+    z-index: 1000;
+    top: 400px;
+    right: 200px;
+    width: 50px;
+    display: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#next.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes,
+.box {
+    visibility: hidden;
+}
+
+.news {
+    height: 80vh;
+    background-color: #d3d3d3;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 5fr 7fr;
+    color: #585772;
+}
+
+.news-heading {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 1.5em;
+}
+
+.news-content {
+    grid-row: 2/3;
+    grid-column: 4/7;
+    background-color: white;
+    margin-bottom: 5em;
+}
+
+.content-item {
+    text-decoration: none;
+    color: #585772;
+}
+
+.content-item-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
 }
 
 @media (max-width: 1000px) {
@@ -270,6 +380,9 @@ input:focus {
     }
     .info {
         width: 640px;
+    }
+    .top-site {
+        height: 85vh;
     }
 }
 

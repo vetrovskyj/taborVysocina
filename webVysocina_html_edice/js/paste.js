@@ -1,6 +1,6 @@
 window.onload = function() {
         const content = document.createElement('a');
-        content.setAttribute('href', './Vylety.html');
+        //content.setAttribute('href', './Vylety.html');
         content.classList.add('content-item');
 
         const newsContent = document.querySelector('.news-content');

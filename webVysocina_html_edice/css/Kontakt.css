@@ -1,313 +1,329 @@
-body{
-	font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 button {
-	font-family: 'Poppins', sans-serif;
-	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-	height: 10vh;
-	display: flex;
-	align-items: center;
-	background-color: #ff6666;
-	justify-content: space-around;
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #ff6666;
+    justify-content: space-around;
 }
 
 .nazev,
 .menu,
 .logo {
-	display: flex;
+    display: flex;
 }
 
-.nazev{
-	flex: 1;
+.nazev {
+    flex: 1;
 }
 
-.turnus{
-	padding-left: 55px;
-	color: white;
+.turnus {
+    padding-left: 55px;
+    color: white;
 }
 
-.vysocina{
-	padding-left: 10px;
-	font-size: 40px;
-	color: white;
+.vysocina {
+    padding-left: 10px;
+    font-size: 40px;
+    color: white;
 }
 
-nav{
-	flex: 2;
+nav {
+    flex: 2;
 }
 
-.logo{
-	justify-content: flex-end;
-	flex: 1;
-	background-color: transparent;
-	padding-right: 10px;
+.logo {
+    justify-content: flex-end;
+    flex: 1;
+    background-color: transparent;
+    padding-right: 10px;
 }
 
-.nadpis img{
-	padding-top: 5px;
-	width: 75px;
+.nadpis img {
+    padding-top: 5px;
+    width: 75px;
 }
 
-.home{
-	text-decoration: none;
-	color: white;
+.home {
+    text-decoration: none;
+    color: white;
 }
 
-.menu{
-	list-style: none;
-	justify-content: space-around;
-	font-weight: 400;
+.menu {
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 400;
 }
 
-.link{
-	text-decoration: none;
-	font-size: 20px;
-	color: black;
-	padding: 5px;
-	color:white;
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    color: white;
 }
 
-.link:hover{
-	color: yellow;
+.link:hover {
+    color: yellow;
 }
 
-.telo{
-	height: 85vh;
+.kontakt {
+    width: 85%;
+    display: flex;
+    margin: 40px auto;
+    height: 75vh;
+    justify-content: center;
 }
 
-.kontakt{
-	width: 85%;
-	display: flex;
-	margin: auto;
+.adress {
+    font-size: 22px;
+    color: #585772;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 30px;
+    text-align: center;
 }
 
-.titulek1{
-	margin-top: 30px;
-	padding-right: 116px;
+.formular {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    color: #585772;
+    text-align: center;
+    width: 50%;
+    margin-left: 30px;
 }
 
-.titulek2{
-	margin-top: 30px;
-	padding-left: 116px;
+.pole {
+    margin: 40px 0 30px 0;
+    display: grid;
+    font-size: 22px;
+    color: #585772;
+    grid-template-rows: 50px 25px 50px 25px 50px 25px 275px 30px auto;
+    width: 100%;
 }
 
-.adress p{
-	padding-right: 116px;
+#jmeno {
+    grid-row: 1/2;
 }
 
-.adress{
-	flex: 1;
-	font-size: 22px;
-	color: #585772;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+#email {
+    grid-row: 3/4;
 }
 
-#adresa{
-	padding-right: 116px;
+#predmet {
+    grid-row: 5/6;
 }
 
-.formular{
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	font-size: 22px;
-	color: #585772;
-	text-align: center;
+#zprava {
+    grid-row: 7/8;
 }
 
-.pole{
-	margin: 48px 0 30px 0;
-	display: grid;
-	font-size: 22px;
-	color: #585772;
-	grid-column: 1;
-	justify-content: end;
-	grid-template-rows: 50px 25px 50px 25px 50px 25px 275px 30px auto;
+#button {
+    grid-row: 9/10;
 }
 
-#jmeno{
-	grid-row: 1/2;
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: rgb(247, 246, 243);
 }
 
-#email{
-	grid-row: 3/4;
+textarea {
+    height: auto;
 }
 
-#predmet{
-	grid-row: 5/6;
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 40px 0 40px 0;
+    border: 2px solid #666;
 }
 
-#zprava{
-	grid-row: 7/8;
+.adresa p {
+    display: inline;
 }
 
-#button{
-grid-row: 9/10;
+.tlacitko {
+    background-color: transparent;
+    color: #666;
+    border: 2px solid #666;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-input, textarea{
-	width: 700px;
-	padding: 12px;
-	border: 2px solid #666;
-	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
-	background-color: rgb(247, 246, 243);
+.panel {
+    height: 5vh;
+    background-color: #666;
+    text-align: center;
 }
 
-textarea{
-	height: auto;
+.panel p {
+    color: white;
+    padding-top: 10px;
 }
 
-#map{
-	width: 700px;
-	height: 500px;
-	margin: 48px 0 40px 0;
-	border: 2px solid #666;
+.contacts {
+    background-color: rgb(151, 141, 109);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    /*transform: rotate(-1deg);*/
+    overflow: hidden;
+    margin-bottom: 100px;
+    width: 90%;
+    margin: 0 auto 100px auto;
 }
 
-.tlacitko{
-	background-color: transparent;
-	color: #666;
-	border: 2px solid #666;
-	width: 150px;
-	height: 50px;
-	cursor: pointer;
-	font-size: 16px;
+.rotation-back {
+    /*transform: rotate(1deg);*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-.panel{
-	height: 5vh;
-	background-color: #666;
-	text-align: center;
+.contact {
+    display: flex;
+    flex-direction: column;
 }
 
-.panel p{
-	color: white;
-	padding-top: 10px;
+.contact img {
+    margin: 20px auto;
+    fill: white;
 }
 
-@media (max-width: 1700px) {
-	.telo{
-		height: auto;
-	}
+svg {
+    fill: white;
+}
 
-	.kontakt{
-		display: grid;
-		justify-content: center;
-	}
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
 
-	.pole{
-		justify-content: left;
-	}
+.telo {
+    overflow: hidden;
+}
 
-	#map{
-		width: 900px;
-		height: 500px;
-	}
+@media (max-width: 1300px) {
+    .adresa p {
+        display: block;
+    }
+    .adresa {
+        margin-top: -10px;
+        flex-direction: column;
+    }
+}
 
-	input, textarea{
-		width: 900px;
-	}
-
-	.titulek1{
-		margin-top: 30px;
-		padding-right: 0;
-	}
-	
-	.titulek2{
-		margin-top: 30px;
-		padding-left: 0;
-	}
-	
-	.adress p{
-		padding-right: 0;
-	}
-
-	#adresa{
-		padding-right: 0;
-	}
+@media (max-width: 1250px) {
+    .kontakt {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adress {
+        margin: 0 0 40px 0;
+        width: 80%;
+    }
+    .formular {
+        margin: 0;
+        width: 80%;
+    }
+    #map {
+        margin: 30px 0 30px 0;
+    }
+    .pole {
+        margin: 30px 0 0 0;
+    }
+    .adresa p {
+        display: inline;
+    }
+    .adresa {
+        margin-top: 0px;
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 1000px) {
-	header{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr 1fr;
-		height: 15vh;
-	}
-
-	.nazev{
-		grid-area: "prava";
-	}
-
-	.logo{
-		grid-area: "leva";
-		grid-column: 2/3;
-		grid-row: 1/2;
-	}
-
-	nav{
-		grid-area: "pod";
-		grid-column: 1/3;
-		background-color: #666;
-		height: 5vh;
-		align-self: center;
-	}
-
-	.menu{
-		text-align: center;
-		align-items: center;
-		height: 100%;
-	}
-
-	.kapitola{
-		margin-top: 30px;
-	}
-
-	.telo{
-		height: auto;
-	}
-
-	.kontakt{
-		display: grid;
-		justify-content: center;
-	}
-
-	.pole{
-		justify-content: left;
-		margin: 30px 0 30px 0;
-	}
-
-	#map{
-		width: 650px;
-		height: 500px;
-		margin: 30px 0 30px 0;
-	}
-
-	input, textarea{
-		width: 650px;
-	}
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        height: 15vh;
+    }
+    .nazev {
+        grid-area: "prava";
+    }
+    .logo {
+        grid-area: "leva";
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    nav {
+        grid-area: "pod";
+        grid-column: 1/3;
+        background-color: #666;
+        height: 5vh;
+        align-self: center;
+    }
+    .menu {
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+    .kapitola {
+        margin-top: 30px;
+    }
 }
 
-@media (max-width: 700px) {
-	#map{
-		width: 470px;
-		height: 300px;
-	}
+@media (max-width: 800px) {
+    .adress {
+        width: 90%;
+    }
+    .formular {
+        width: 90%;
+    }
+    .adresa p {
+        font-size: 18px;
+    }
+}
 
-	input, textarea{
-		width: 470px;
-	}
+@media (max-width: 800px) {
+    #map {
+        height: 300px;
+    }
+    .kontakt h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    .link {
+        font-size: 14px;
+    }
 }

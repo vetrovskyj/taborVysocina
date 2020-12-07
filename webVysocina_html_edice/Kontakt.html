@@ -9,12 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/Kontakt.css">
     <script src="https://api.mapy.cz/loader.js"></script>
     <script>
-        Loader.load()
+        Loader.load();
     </script>
 </head>
 
 <body>
-
     <header>
         <div class="nazev">
             <a class="home" href="index.html">
@@ -47,8 +46,9 @@
                     <h1 class="titulek1">Kde nás najdete?</h1>
                 </div>
                 <div id="map"></div>
-                <div>
-                    <p id="adresa">Adresa: Lesní 66, Nové Město na Moravě, 592 31</p>
+                <div class="adresa">
+                    <p>Adresa:</p>
+                    <p> Lesní 66, Nové Město na Moravě, 592 31</p>
                 </div>
                 <script>
                     var center = SMap.Coords.fromWGS84(16.064546, 49.574772);
@@ -67,15 +67,36 @@
             </div>
             <div class="formular">
                 <h1 class="titulek2">Napište nám email</h1>
-                <form class="pole" action="kontaktni_formular.php" method="post">
+                <!--<form class="pole" action="kontaktni_formular.php" method="post">-->
+                <form class="pole" action="https://formspree.io/f/mjvpakvj" method="POST">
                     <input id="jmeno" type="text" name="jmeno" placeholder="Jméno a příjmení" required>
-                    <input id="email" type="text" name="email" placeholder="Vaše emailová adresa" required>
+                    <input id="email" name="_replyto" type="email" placeholder="Vaše emailová adresa" required>
                     <input id="predmet" type="text" name="predmet" placeholder="Předmět zprávy">
                     <textarea id="zprava" name="zprava" placeholder="Napište nám zprávu"></textarea>
                     <div id="button">
-                        <input type="submit" name="submit" class="tlacitko" />
+                        <input type="submit" value="Send" name="submit" class="tlacitko" />
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="rotation-back">
+                <div class="contact">
+                    <img src="./images/man-in-suit-and-tie.svg" width="50" alt="person icon">
+                    <a><strong>Jan Větrovský</strong></a>
+                </div>
+                <div class="contact">
+                    <img src="./images/cell-phone.svg" width="50" alt="cell phone icon">
+                    <a href="tel:+420773201372"><strong>+420773201372</strong></a>
+                </div>
+                <div class="contact">
+                    <img src="./images/email.svg" width="50" alt="envelope icon">
+                    <a href="mailto:vetrovsky.jan@gmail.com"><strong>vetrovsky.jan@gmail.com</strong></a>
+                </div>
+                <div class="contact">
+                    <img src="./images/information-button.svg" width="50" alt="information icon">
+                    <a href="mailto:vetrovsky.jan@gmail.com">Zřizovatel: <strong>PČR Praha</strong></a>
+                </div>
             </div>
         </div>
     </main>

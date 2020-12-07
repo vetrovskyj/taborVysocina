@@ -244,3 +244,9 @@ nav {
         margin: 2.5px;
     }
 }
+
+@media (max-width: 500px) {
+    .link {
+        font-size: 14px;
+    }
+}

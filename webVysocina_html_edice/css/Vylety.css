@@ -127,6 +127,7 @@ nav {
 
 .more {
     color: blue !important;
+    font-size: 14px;
 }
 
 .foto-href {
@@ -182,5 +183,11 @@ nav {
     }
     .telo {
         height: 80vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .link {
+        font-size: 14px;
     }
 }

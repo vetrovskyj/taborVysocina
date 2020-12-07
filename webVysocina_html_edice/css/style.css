@@ -85,6 +85,10 @@ nav {
     width: 640px;
 }
 
+.fotky:hover {
+    cursor: pointer;
+}
+
 .fotka {
     display: flex;
     width: 100%;
@@ -133,7 +137,7 @@ input:focus {
 .info {
     display: flex;
     align-items: center;
-    width: 700px;
+    width: 640px;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -319,7 +323,7 @@ input:focus {
     background-color: #d3d3d3;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
-    grid-template-rows: 5fr 7fr;
+    grid-template-rows: 30vh 50vh;
     color: #585772;
 }
 

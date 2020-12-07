@@ -92,7 +92,7 @@ nav {
     justify-self: center;
     box-shadow: 5px 5px 5px 5px #666;
     display: grid;
-    width: 80%;
+    width: 70%;
     height: 300px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -100,18 +100,20 @@ nav {
     padding: 10px;
     align-items: center;
     grid-column-gap: 20px;
+    color: #585772;
+}
+
+.vylet a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .vylet:nth-child(1) {
     margin: 20px 0 20px 0;
 }
 
-.vylet:nth-child(2) {
-    margin: 0;
-}
-
-.vylet:nth-child(3) {
-    margin: 20px 0 20px 0;
+.vylet {
+    margin: 0 0 20px 0;
 }
 
 .nazev_vyletu {
@@ -121,6 +123,14 @@ nav {
 .text_vyletu {
     text-align: justify;
     grid-area: box2;
+}
+
+.more {
+    color: blue !important;
+}
+
+.foto-href {
+    grid-area: box3;
 }
 
 .foto {

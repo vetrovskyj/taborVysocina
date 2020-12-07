@@ -7,6 +7,7 @@
     <meta name="Keywords" content="Tábor, tábor Vysočina, 3. turnus, letní tábor,Vysočina,PČR,děti,hry">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style_O_Tabore.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -37,10 +38,23 @@
     </header>
 
     <main class="telo">
+        <div class="dotazy">
+            <h1>Nejčastější dotazy</h1>
+            <ul class="questions-one">
+                <li><a href="#areal">Kde děti bydlí</a></li>
+                <li><a href="#vybaveni">Co mají na táboře k dispozici</a></li>
+                <li><a href="#okoli">Kam chodí mimo tábor</a></li>
+            </ul>
+            <ul class="questions-two">
+                <li><a href="#">Co si vzít s sebou na tábor</a></li>
+                <li><a href="#">Můžu dítě navštívit</a></li>
+                <li><a href="#">Posílání pošty a balíčků</a></li>
+            </ul>
+        </div>
         <div class="grid">
             <h1 class="kapitola">Zázemí našeho tábora</h1>
 
-            <div class="areal">
+            <div class="areal" id="areal">
                 <h2>Areál</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam excepturi tempora nihil id accusamus magnam soluta ipsa, modi repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae alias quia.</p>
             </div>
@@ -49,7 +63,7 @@
                 <img src="images/budova.jpg" alt="budova">
             </div>
 
-            <div class="vybaveni">
+            <div class="vybaveni" id="vybaveni">
                 <h2>Vybavení</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam excepturi tempora nihil id accusamus magnam soluta ipsa, modi repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae alias quia.</p>
             </div>
@@ -58,7 +72,7 @@
                 <img src="images/hriste.jpg" alt="hriste">
             </div>
 
-            <div class="okoli">
+            <div class="okoli" id="okoli">
                 <h2>Okolí</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam excepturi tempora nihil id accusamus magnam soluta ipsa, modi repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae alias quia.</p>
             </div>
@@ -67,8 +81,13 @@
                 <img src="images/rybnik.jpg" alt="rybnik">
             </div>
         </div>
+        <div class="things-needed">
+
+        </div>
     </main>
 
     <footer class="panel">
         <p>Copyright &copy; 2020, Tábor Vysočina 3. turnus</p>
     </footer>
+
+    <script src="./js/smoothScroll.js"></script>

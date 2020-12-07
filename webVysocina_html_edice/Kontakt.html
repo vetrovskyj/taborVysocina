@@ -65,14 +65,16 @@
                     layer.addMarker(marker);
                 </script>
             </div>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./kontakt.html';}"></iframe>
             <div class="formular">
                 <h1 class="titulek2">Napište nám email</h1>
-                <!--<form class="pole" action="kontaktni_formular.php" method="post">-->
-                <form class="pole" action="https://formspree.io/f/mjvpakvj" method="POST">
-                    <input id="jmeno" type="text" name="jmeno" placeholder="Jméno a příjmení" required>
-                    <input id="email" name="_replyto" type="email" placeholder="Vaše emailová adresa" required>
-                    <input id="predmet" type="text" name="predmet" placeholder="Předmět zprávy">
-                    <textarea id="zprava" name="zprava" placeholder="Napište nám zprávu"></textarea>
+                <!--<form class="pole" action="kontaktni_formular.php" method="post">
+                <form class="pole" action="https://formspree.io/f/mjvpakvj" method="POST">-->
+                <form class="pole" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO9tLD2MlnjZA2hGuWoznnPHpEdpm5arQgRwprlLC7dDIQVg/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+                    <input id="jmeno" type="text" name="entry.1230703347" placeholder="Jméno a příjmení" required>
+                    <input id="email" name="entry.977340822" type="email" placeholder="Vaše emailová adresa" required>
+                    <input id="predmet" type="text" name="entry.27718538" placeholder="Předmět zprávy">
+                    <textarea id="zprava" name="entry.342859044" placeholder="Napište nám zprávu"></textarea>
                     <div id="button">
                         <input type="submit" value="Send" name="submit" class="tlacitko" />
                     </div>
@@ -104,3 +106,5 @@
     <footer class="panel">
         <p>Copyright &copy; 2020, Tábor Vysočina 3. turnus</p>
     </footer>
+
+    <script src="./js/email.js"></script>

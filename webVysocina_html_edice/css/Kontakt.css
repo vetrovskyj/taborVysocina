@@ -186,7 +186,7 @@ textarea {
 }
 
 .contacts {
-    background-color: rgb(151, 141, 109);
+    background-color: rgb(253, 169, 74);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -267,6 +267,17 @@ svg {
         margin-top: 0px;
         flex-direction: row;
     }
+    .contacts {
+        width: 68%;
+    }
+    .rotation-back {
+        flex-wrap: wrap;
+        height: 90%;
+    }
+    .contact {
+        width: 49%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -302,6 +313,9 @@ svg {
 }
 
 @media (max-width: 800px) {
+    .contacts {
+        width: 76.5%;
+    }
     .adress {
         width: 90%;
     }
@@ -309,6 +323,9 @@ svg {
         width: 90%;
     }
     .adresa p {
+        font-size: 18px;
+    }
+    .contact a {
         font-size: 18px;
     }
 }
@@ -322,8 +339,23 @@ svg {
     }
 }
 
+@media (max-width: 600px) {
+    .contact {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+    .contact img {
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 500px) {
     .link {
+        font-size: 14px;
+    }
+    .contact a {
         font-size: 14px;
     }
 }

@@ -1,28 +1,34 @@
+let submitted = false;
+let emailAlert = document.createElement('p');
+let subjectAlert = document.createElement('p');
+let nameAlert = document.createElement('p');
+
 function validateName() {
     var name = document.getElementById('jmeno').value;
-    if (name.length == 0) {
-        alert("Prosím vyplňte jméno");
-        return false;
 
-    }
     if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-        alert("Prosím používejte jen písmena ve jméně"); //Validation Message
+        nameAlert.classList.remove('hide-alert');
+        nameAlert.classList.add('alert-name');
+        nameAlert.innerText = 'Prosím zadejte platné jméno';
+        var nameInput = document.querySelector('.pole');
+        nameInput.appendChild(nameAlert);
+        emailAlert.classList.add('hide-alert');
+        subjectAlert.classList.add('hide-alert');
         return false;
     }
+
+    nameAlert.classList.remove('alert-name');
+    nameAlert.classList.add('hide-alert');
     return true;
 }
 
 function validateMessage() {
-    var message = document.getElementById('zprava').value;
-    if (phone.length == 0) {
-        alert("Prosím vyplňte zprávu"); //Validation Message
-        return false;
-    }
+    /*var message = document.getElementById('zprava').value;
 
-    if (!subject.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+    if (!message.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
         alert("Prosím používejte jen písmena ve zprávě"); //Validation Message
         return false;
-    }
+    }*/
 
     return true;
 
@@ -31,40 +37,47 @@ function validateMessage() {
 function validateEmail() {
 
     var email = document.getElementById('email').value;
-    if (email.length == 0) {
-        alert("Prosím vyplňte email"); //Validation Message
-        return false;
-
-    }
 
     if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        alert("Zadejte prosím platný email"); //Validation Message
+        emailAlert.classList.remove('hide-alert');
+        emailAlert.classList.add('alert-email');
+        emailAlert.innerText = 'Prosím zadejte platný email';
+        var emailInput = document.querySelector('.pole');
+        emailInput.appendChild(emailAlert);
+        subjectAlert.classList.add('hide-alert');
         return false;
 
     }
 
+    emailAlert.classList.remove('alert-email');
+    emailAlert.classList.add('hide-alert');
     return true;
 
 }
 
 function validateSubject() {
     var subject = document.getElementById('predmet').value;
-    if (name.length == 0) {
-        alert("Prosím vyplňte předmět");
-        return false;
 
+    if (subject.length == 0) {
+        return true;
     }
+
     if (!subject.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-        alert("Prosím používejte jen písmena v předmětu"); //Validation Message
+        subjectAlert.classList.remove('hide-alert');
+        subjectAlert.classList.add('alert-subject');
+        subjectAlert.innerText = 'Prosím používejte jen písmena v předmětu';
+        var subjectInput = document.querySelector('.pole');
+        subjectInput.appendChild(subjectAlert);
         return false;
     }
+
+    subjectAlert.classList.remove('alert-subject');
+    subjectAlert.classList.add('hide-alert');
     return true;
 }
 
 function validateForm() {
-    if (!validateName() || !validatePhone() || !validateEmail() || !validateSubject()) {
-
-        alert("Formulář nebyl odeslán"); //Validation Message
+    if (!validateName() || !validateMessage() || !validateEmail() || !validateSubject()) {
         return false;
     } else {
         submitted = true;

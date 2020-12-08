@@ -230,6 +230,49 @@ svg {
     overflow: hidden;
 }
 
+.alert-subject {
+    color: #ff6666;
+    font-size: 14px;
+    grid-row: 6/7;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/information-button-red.svg);
+    background-size: 17px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 22px;
+}
+
+.alert-email {
+    color: #ff6666;
+    font-size: 14px;
+    grid-row: 4/5;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/information-button-red.svg);
+    background-size: 17px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 22px;
+}
+
+.alert-name {
+    color: #ff6666;
+    font-size: 14px;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/information-button-red.svg);
+    background-size: 17px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 22px;
+}
+
+.hide-alert {
+    display: none;
+}
+
 @media (max-width: 1300px) {
     .adresa p {
         display: block;

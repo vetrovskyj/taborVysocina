@@ -144,10 +144,13 @@ nav {
     color: #585772;
     font-size: 32px;
     width: 100%;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .prevBtn,
 .nextBtn {
     width: 2%;
     height: 5%;
+    outline: none;
 }

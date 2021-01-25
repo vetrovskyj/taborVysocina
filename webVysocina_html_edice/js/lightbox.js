@@ -2,7 +2,7 @@ const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox);
 
-const images = document.querySelectorAll('.foto');
+const images = document.querySelectorAll('img');
 
 const prev = document.createElement('img');
 prev.src = './images/leva.png';
@@ -14,19 +14,33 @@ next.src = './images/prava.png';
 next.id = 'next';
 document.body.appendChild(next);
 
-let i = 0;
+let arr = [];
+for (let i = 0, len = images.length; i < len; i++) {
+    (function(index) {
+        images[i].onclick = function() {
+            arr = [];
+            arr.push(index);
+        };
+    })(i);
+};
 
 function nextItem() {
+    let i = arr[0];
     i = i + 1; // increase i by one
+    arr = [];
+    arr.push(i);
     i = i % images.length; // if we've gone too high, start from `0` again
     return images[i]; // give us back the item of where we are now
 };
 
 function prevItem() {
+    let i = arr[0];
     if (i === 0) { // i would become 0
         i = images.length; // so put it at the other end of the array
     }
     i = i - 1; // decrease by one
+    arr = [];
+    arr.push(i);
     return images[i]; // give us back the item of where we are now
 }
 

@@ -174,6 +174,10 @@ textarea {
     font-size: 16px;
 }
 
+.tlacitko:hover {
+    background-color: rgb(247, 246, 243);
+}
+
 .panel {
     height: 5vh;
     background-color: #666;
@@ -193,9 +197,8 @@ textarea {
     height: 40vh;
     /*transform: rotate(-1deg);*/
     overflow: hidden;
-    margin-bottom: 100px;
     width: 85%;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
 }
 
 .rotation-back {
@@ -220,10 +223,14 @@ svg {
     fill: white;
 }
 
-.contact a {
+.contact-entity {
     text-decoration: none;
     color: white;
     font-size: 22px;
+}
+
+.contact a {
+    text-decoration: underline;
 }
 
 .telo {
@@ -368,7 +375,7 @@ svg {
     .adresa p {
         font-size: 18px;
     }
-    .contact a {
+    .contact-entity {
         font-size: 18px;
     }
 }
@@ -398,7 +405,7 @@ svg {
     .link {
         font-size: 14px;
     }
-    .contact a {
+    .contact-entity {
         font-size: 14px;
     }
 }

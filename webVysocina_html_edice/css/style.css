@@ -589,8 +589,44 @@ input:focus {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .link {
         font-size: 14px;
+    }
+    .box p {
+        font-size: 14px;
+    }
+    .info {
+        width: 90%;
+    }
+    .fotky {
+        width: 400px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .fotky {
+        width: 300px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 300px;
+    }
+    .text-heading h2 {
+        font-size: 32px;
+    }
+    .box img {
+        width: 50px;
+        height: 50px;
+    }
+    .box:nth-child(2) img {
+        width: 50px;
+        margin-right: 20px;
     }
 }

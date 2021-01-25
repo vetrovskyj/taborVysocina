@@ -83,8 +83,6 @@ nav {
 .telo {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
     align-items: center;
 }
 
@@ -142,7 +140,6 @@ nav {
 .panel {
     height: 5vh;
     background-color: #666;
-    ;
     text-align: center;
 }
 
@@ -180,9 +177,6 @@ nav {
     }
     .kapitola {
         margin-top: 30px;
-    }
-    .telo {
-        height: 80vh;
     }
 }
 

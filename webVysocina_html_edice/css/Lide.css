@@ -18,7 +18,7 @@ header {
     align-items: center;
     background-color: #ff6666;
     justify-content: space-around;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .nazev,
@@ -81,21 +81,23 @@ nav {
     color: yellow;
 }
 
-.telo {
+
+/*.telo {
     max-width: 100%;
     display: grid;
     grid-template-columns: 300px auto 300px;
     grid-template-rows: 300px 300px 300px 300px 300px;
     grid-row-gap: 30px;
-}
+}*/
 
-.jedna {
+
+/*.jedna {
     background-color: #ff66664d;
     box-shadow: 5px 5px 5px 5px #666;
     padding: 10px;
     grid-column: 1/3;
     display: flex;
-}
+}*/
 
 .dva {
     box-shadow: 15px solid #666;
@@ -123,13 +125,58 @@ nav {
 }
 
 .osoba {
+    margin: 30px;
+    padding: 20px;
+    width: 45%;
     text-align: justify;
-    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px #666;
 }
 
 .osoba img {
     width: 150px;
-    margin-left: 156px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.jmeno {
+    margin-bottom: 15px;
+}
+
+.jmeno p:first-child {
+    font-size: 24px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.jmeno p:first-child:hover {
+    cursor: pointer;
+}
+
+.jmeno p:first-child:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #ff6666;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.jmeno p:first-child:hover:after {
+    transform: scaleX(1);
+}
+
+.text {
+    margin-right: 20px;
+}
+
+.telo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    color: #585772;
 }
 
 
@@ -194,6 +241,7 @@ nav {
 }*/
 
 .panel {
+    margin-top: 30px;
     height: 5vh;
     background-color: #666;
     text-align: center;
@@ -233,9 +281,6 @@ nav {
     }
     .kapitola {
         margin-top: 30px;
-    }
-    .telo {
-        height: 80vh;
     }
 }
 

@@ -154,3 +154,45 @@ nav {
     height: 5%;
     outline: none;
 }
+
+@media (max-width: 1000px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        height: 15vh;
+    }
+    .nazev {
+        grid-area: "prava";
+    }
+    .logo {
+        grid-area: "leva";
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    nav {
+        grid-area: "pod";
+        grid-column: 1/3;
+        background-color: #666;
+        height: 5vh;
+        align-self: center;
+    }
+    .menu {
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+    .kapitola {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .link {
+        font-size: 14px;
+    }
+    .panel p {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+}

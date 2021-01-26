@@ -408,4 +408,8 @@ svg {
     .contact-entity {
         font-size: 14px;
     }
+    .panel p {
+        font-size: 12px;
+        padding-top: 15px;
+    }
 }

@@ -607,6 +607,10 @@ input:focus {
     .foto3 {
         width: 400px;
     }
+    .panel p {
+        font-size: 12px;
+        padding-top: 15px;
+    }
 }
 
 @media (max-width: 450px) {

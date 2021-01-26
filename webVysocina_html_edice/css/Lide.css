@@ -126,22 +126,40 @@ nav {
 
 .osoba {
     margin: 30px;
-    padding: 20px;
     width: 45%;
     text-align: justify;
     display: flex;
     align-items: center;
-    box-shadow: 5px 5px 5px 5px #666;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
+    height: 218px;
+    -webkit-transition: height 250ms ease;
+    -moz-transition: height 250ms ease;
+    -o-transition: height 250ms ease;
+    transition: height 250ms ease-in;
 }
 
-.osoba img {
-    width: 150px;
-    height: 150px;
+.osoba.transition {
+    height: 400px;
+}
+
+.profile-photo img {
+    width: 90%;
     border-radius: 50%;
+}
+
+.profile-photo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 169, 74);
 }
 
 .jmeno {
     margin-bottom: 15px;
+    color: rgb(253, 169, 74);
 }
 
 .jmeno p:first-child {
@@ -157,7 +175,7 @@ nav {
 .jmeno p:first-child:after {
     display: block;
     content: '';
-    border-bottom: solid 3px #ff6666;
+    border-bottom: solid 3px rgb(253, 169, 74);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
@@ -167,7 +185,8 @@ nav {
 }
 
 .text {
-    margin-right: 20px;
+    margin: 20px;
+    width: 70%;
 }
 
 .telo {
@@ -177,6 +196,15 @@ nav {
     margin: auto;
     justify-content: center;
     color: #585772;
+}
+
+.profile-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    -moz-webkit-box-orient: vertical;
+    margin-right: 15px;
 }
 
 

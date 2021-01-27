@@ -81,24 +81,6 @@ nav {
     color: yellow;
 }
 
-
-/*.telo {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 300px auto 300px;
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-row-gap: 30px;
-}*/
-
-
-/*.jedna {
-    background-color: #ff66664d;
-    box-shadow: 5px 5px 5px 5px #666;
-    padding: 10px;
-    grid-column: 1/3;
-    display: flex;
-}*/
-
 .dva {
     box-shadow: 15px solid #666;
     padding: 10px;
@@ -125,11 +107,10 @@ nav {
 }
 
 .osoba {
-    margin: 30px;
     width: 45%;
-    text-align: justify;
     display: flex;
     align-items: center;
+    margin: 20px 0;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
     height: 218px;
     -webkit-transition: height 250ms ease;
@@ -194,7 +175,7 @@ nav {
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
     color: #585772;
 }
 
@@ -207,67 +188,6 @@ nav {
     margin-right: 15px;
 }
 
-
-/*.telo{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 4fr;
-	align-items: center;
-	justify-items: center;
-}
-
-.vedeni{
-	display: inline-flex;
-	grid-column: 1/3;
-	grid-row: 1/2;
-	width: 1851px;
-	justify-content: space-between;
-}
-
-.kluci{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	width: 900px;
-	column-gap: 20px;
-}
-
-.holky{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	width: 900px;
-	column-gap: 20px;
-}
-
-.osoba img,
-.sef img{
-	width: 150px;
-}
-
-.osoba{
-	display: flex;
-	border: solid;
-	align-items: center;
-	text-align: justify;
-}
-
-.sef{
-	border: solid;
-	align-items: center;
-	text-align: justify;
-}
-
-.sef img{
-	margin-left: 156px;
-}
-
-#posledni{
-	grid-column: 1/3;
-	text-align: center;
-	align-items: center;
-}*/
-
 .panel {
     margin-top: 30px;
     height: 5vh;
@@ -278,6 +198,40 @@ nav {
 .panel p {
     color: white;
     padding-top: 10px;
+}
+
+@media (max-width: 1600px) {
+    .telo {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .telo {
+        width: 90%;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .text {
+        margin: 10px;
+    }
+    .profile-description {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .telo {
+        width: 90%;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .osoba {
+        margin: 10px 0;
+        width: 47.5%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -312,6 +266,51 @@ nav {
     }
 }
 
+@media (max-width: 900px) {
+    .telo {
+        width: 95%;
+    }
+    .osoba.transition {
+        height: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+    .text p {
+        font-size: 12px;
+    }
+    .jmeno p:first-child {
+        font-size: 16px;
+    }
+    .osoba.transition {
+        height: 400px;
+    }
+    .osoba {
+        height: 150px;
+    }
+    .text {
+        margin: 5px;
+    }
+    .profile-description {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 650px) {
+    .osoba.transition {
+        height: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+    .osoba {
+        width: 80%;
+    }
+    .osoba.transition {
+        height: 300px;
+    }
+}
+
 @media (max-width: 500px) {
     .link {
         font-size: 14px;
@@ -319,5 +318,29 @@ nav {
     .panel p {
         font-size: 12px;
         padding-top: 15px;
+    }
+    .osoba {
+        width: 85%;
+    }
+}
+
+@media (max-width: 470px) {
+    .osoba {
+        width: 90%;
+    }
+}
+
+@media (max-width: 440px) {
+    .osoba.transition {
+        height: 350px;
+    }
+}
+
+@media (max-width: 390px) {
+    .osoba.transition {
+        height: 400px;
+    }
+    .osoba {
+        width: 95%;
     }
 }

@@ -81,6 +81,17 @@ function validateForm() {
         return false;
     } else {
         submitted = true;
+        /*setTimeout(() => {
+            const sentInfo = document.createElement('p');
+            sentInfo.innerText = 'Děkujeme, Váš email byl odeslán'
+            const form = document.querySelector('.formular');
+            form.appendChild(sentInfo);
+            setTimeout(() => {
+                form.removeChild(sentInfo);
+            }, 3000);
+            console.log(sentInfo.innerText);
+        }, 2000);
+        console.log(sentInfo.innerText);*/
         return true;
     }
 }

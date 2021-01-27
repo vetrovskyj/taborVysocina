@@ -12,119 +12,146 @@ const nextButtonThird = nextBtn[2];
 const prevButtonThird = prevBtn[2];
 console.log(prevBtn);
 
-let counter = 0;
+let counterZero = 0;
+let counterFirst = 0;
+let counterThird = 0;
 
+const carouselSlide = document.querySelectorAll('.years-item-container');
+let width = document.querySelector('.years-preview').clientWidth / 3;
+let widthMargin = '';
+
+if (window.innerWidth > 1000) {
+    width = width - 40;
+    widthMargin = width + 40;
+} else if (window.innerWidth > 750) {
+    width = width - 20;
+    widthMargin = width + 20;
+} else if (window.innerWidth > 500) {
+    width = width - 12;
+    widthMargin = width + 12;
+} else {
+    width = width - 6;
+    widthMargin = width + 6;
+}
+
+console.log(width);
+
+for (let i = 0; i < carouselSlide.length; i++) {
+    carouselSlide[i].style.minWidth = width + 'px';
+}
+
+console.log(widthMargin);
 
 nextButtonZero.addEventListener('click', () => {
-    counter++;
+    counterZero++;
     for (let i of carouselSlideZero) {
-        if (counter == 0) {
+        if (counterZero == 0) {
             i.style.transform = 'translateX(' + (0) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 1) {
-            i.style.transform = 'translateX(' + (-590) + 'px)';
+        if (counterZero == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 2) {
-            i.style.transform = 'translateX(' + (-1180) + 'px)';
+        if (counterZero == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter > 2) { counter = 2; }
+        if (counterZero > 2) { counterZero = 2; }
     }
 });
 
 prevButtonZero.addEventListener('click', () => {
-    counter--;
+    counterZero--;
     for (let i of carouselSlideZero) {
-        if (counter == 0) {
+        if (counterZero == 0) {
             i.style.transform = 'translateX(' + (0) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 1) {
-            i.style.transform = 'translateX(' + (-590) + 'px)';
+        if (counterZero == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 2) {
-            i.style.transform = 'translateX(' + (-1180) + 'px)';
+        if (counterZero == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter < 0) { counter = 0; }
+        if (counterZero < 0) { counterZero = 0; }
     };
 });
 
 nextButtonFirst.addEventListener('click', () => {
-    counter++;
+    counterFirst++;
     for (let i of carouselSlideFirst) {
-        if (counter == 0) {
+        if (counterFirst == 0) {
             i.style.transform = 'translateX(' + (0) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 1) {
-            i.style.transform = 'translateX(' + (-590) + 'px)';
+        if (counterFirst == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 2) {
-            i.style.transform = 'translateX(' + (-1180) + 'px)';
+        if (counterFirst == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter > 2) { counter = 2; }
+        if (counterFirst > 2) { counterFirst = 2; }
     }
 });
 
 prevButtonFirst.addEventListener('click', () => {
-    counter--;
+    counterFirst--;
     for (let i of carouselSlideFirst) {
-        if (counter == 0) {
+        if (counterFirst == 0) {
             i.style.transform = 'translateX(' + (0) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 1) {
-            i.style.transform = 'translateX(' + (-590) + 'px)';
+        if (counterFirst == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 2) {
-            i.style.transform = 'translateX(' + (-1180) + 'px)';
+        if (counterFirst == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter < 0) { counter = 0; }
+        if (counterFirst < 0) { counterFirst = 0; }
     };
 });
 
 nextButtonThird.addEventListener('click', () => {
-    counter++;
+    counterThird++;
     for (let i of carouselSlideThird) {
-        if (counter == 0) {
+        if (counterThird == 0) {
             i.style.transform = 'translateX(' + (0) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 1) {
-            i.style.transform = 'translateX(' + (-590) + 'px)';
+        if (counterThird == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 2) {
-            i.style.transform = 'translateX(' + (-1180) + 'px)';
+        if (counterThird == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter > 2) { counter = 2; }
+        if (counterThird > 2) { counterThird = 2; }
     }
 });
 
 prevButtonThird.addEventListener('click', () => {
-    counter--;
+    counterThird--;
     for (let i of carouselSlideThird) {
-        if (counter == 0) {
+        if (counterThird == 0) {
             i.style.transform = 'translateX(' + (0) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 1) {
-            i.style.transform = 'translateX(' + (-590) + 'px)';
+        if (counterThird == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter == 2) {
-            i.style.transform = 'translateX(' + (-1180) + 'px)';
+        if (counterThird == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
             i.style.transition = "transform 0.4s ease-in-out";
         }
-        if (counter < 0) { counter = 0; }
+        if (counterThird < 0) { counterThird = 0; }
     };
 });

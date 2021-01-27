@@ -1,0 +1,635 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #ff6666;
+    justify-content: space-around;
+}
+
+.nazev,
+.menu,
+.logo {
+    display: flex;
+}
+
+.nazev {
+    flex: 1;
+}
+
+.turnus {
+    padding-left: 55px;
+    color: white;
+}
+
+.vysocina {
+    padding-left: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+nav {
+    flex: 2;
+}
+
+.logo {
+    justify-content: flex-end;
+    flex: 1;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.nadpis img {
+    padding-top: 5px;
+    width: 75px;
+}
+
+.home {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 400;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    color: white;
+}
+
+.link:hover {
+    color: yellow;
+}
+
+.telo {
+    margin: auto;
+    height: 100%;
+}
+
+.fotky {
+    width: 640px;
+}
+
+.fotky:hover {
+    cursor: pointer;
+}
+
+.fotka {
+    display: flex;
+    width: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+.foto1,
+.foto3,
+#lastClone #firstClone {
+    opacity: 30%;
+}
+
+.sipky {
+    margin-top: 30px;
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.prava {
+    width: 80%;
+}
+
+#prevBtn {
+    width: 70%;
+}
+
+#nextBtn {
+    width: 70%;
+}
+
+.dot {
+    width: 1.5%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.leva {
+    width: 80%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    width: 640px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.text {
+    text-align: justify;
+    margin: auto;
+    font-size: 22px;
+    color: #585772;
+}
+
+.text-heading {
+    display: flex;
+}
+
+.text-heading h2 {
+    color: #585772;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.text-heading h2:last-child {
+    padding-left: 5px;
+    color: #ff6666;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.tlacitko {
+    text-decoration: none;
+    float: right;
+    background-color: transparent;
+    color: #ff6666;
+    height: 30px;
+    border: 2px solid #ff6666;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tlacitko:focus {
+    outline: none;
+}
+
+.top-site {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.bottom-site {
+    height: 100%;
+}
+
+.boxes {
+    background-color: #ff6666;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    color: #585772;
+}
+
+.box {
+    background: rgb(255, 252, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-row: 2/3;
+    margin-bottom: -5em;
+    padding: 40px;
+    font-size: 22px;
+}
+
+.box-desc h2 {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 32px;
+}
+
+.box:nth-child(1) {
+    grid-column: 2/3;
+}
+
+.box:nth-child(2) {
+    grid-column: 4/5;
+}
+
+.box:nth-child(3) {
+    grid-column: 6/7;
+}
+
+.panel {
+    height: 5vh;
+    background-color: #666;
+    ;
+    text-align: center;
+}
+
+.panel p {
+    color: white;
+    padding-top: 10px;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#prev {
+    position: fixed;
+    z-index: 1000;
+    top: 400px;
+    left: 200px;
+    width: 50px;
+    display: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#prev.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 6px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#next {
+    position: fixed;
+    z-index: 1000;
+    top: 400px;
+    right: 200px;
+    width: 50px;
+    display: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#next.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes,
+.box {
+    visibility: hidden;
+}
+
+.news {
+    height: 80vh;
+    background-color: #d3d3d3;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 25vh 55vh;
+    color: #585772;
+}
+
+.news-heading {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ff6666;
+}
+
+.news-heading h2 {
+    font-size: 48px;
+}
+
+.news-heading img {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.news-content {
+    grid-row: 2/3;
+    grid-column: 4/7;
+    background-color: #ff6666;
+    margin-bottom: 5em;
+    padding: 20px;
+}
+
+.content-item {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.vylet {
+    border-bottom: 2px solid white;
+    padding-bottom: 17px;
+}
+
+.vylet:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.vylet a:hover {
+    color: yellow;
+}
+
+.vylet img {
+    display: none;
+}
+
+.vylet h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.vylet a {
+    color: inherit;
+}
+
+.more {
+    display: none;
+    font-size: 18px;
+    color: blue !important;
+}
+
+.vylet p {
+    font-size: 22px;
+}
+
+.vylet p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 1500px) {
+    .boxes {
+        grid-template-columns: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
+    }
+    .news {
+        grid-template-columns: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
+    }
+    .box {
+        font-size: 18px;
+    }
+    .vylet p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .boxes {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        height: 90vh;
+        margin: 5vh 0 0 0;
+    }
+    .news {
+        height: 60vh;
+        grid-template-rows: 10vh 50vh;
+    }
+    .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 20px;
+        width: 90%;
+        height: 80%;
+        margin: auto;
+    }
+    .box img {
+        margin-right: 20px;
+    }
+    .box:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .box:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        flex-direction: column;
+        height: 90%;
+    }
+    .box:nth-child(2) .box-desc h2 {
+        margin-bottom: 50px;
+    }
+    .box:nth-child(2) img {
+        width: 200px;
+        margin: 0;
+    }
+    .box:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        height: 15vh;
+    }
+    .nazev {
+        grid-area: "prava";
+    }
+    .logo {
+        grid-area: "leva";
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    nav {
+        grid-area: "pod";
+        grid-column: 1/3;
+        background-color: #666;
+        height: 5vh;
+        align-self: center;
+    }
+    .menu {
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+    .kapitola {
+        margin-top: 30px;
+    }
+    .info {
+        width: 640px;
+    }
+    .top-site {
+        height: 85vh;
+    }
+    .boxes {
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .box-desc h2 {
+        padding: 15px 0;
+        font-size: 32px;
+    }
+    .box p {
+        font-size: 16px;
+    }
+    .vylet p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 850px) {
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        height: 30%;
+        margin-bottom: -30px;
+    }
+    .box:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        flex-direction: row;
+        height: 30%;
+    }
+    .box:nth-child(2) .box-desc h2 {
+        margin-bottom: initial;
+    }
+    .box:nth-child(2) img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .info {
+        width: 480px;
+    }
+    .fotky {
+        width: 480px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 480px;
+    }
+    .text-heading {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .text-heading h2:first-child {
+        margin-bottom: 0;
+    }
+    .text-heading h2:last-child {
+        margin-bottom: 0;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .news {
+        grid-template-rows: 10vh 10vh 1fr;
+    }
+    .news-heading {
+        grid-row: 2/3;
+        flex-direction: row;
+    }
+    .news-heading img {
+        margin: 0 0 0 20px;
+        width: 50px;
+    }
+    .news-content {
+        grid-row: 3/4;
+        grid-column: 2/7;
+    }
+}
+
+@media (max-width: 550px) {
+    .link {
+        font-size: 14px;
+    }
+    .box p {
+        font-size: 14px;
+    }
+    .info {
+        width: 90%;
+    }
+    .fotky {
+        width: 400px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 400px;
+    }
+    .panel p {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .fotky {
+        width: 300px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 300px;
+    }
+    .text-heading h2 {
+        font-size: 32px;
+    }
+    .box img {
+        width: 50px;
+        height: 50px;
+    }
+    .box:nth-child(2) img {
+        width: 50px;
+        margin-right: 20px;
+    }
+}

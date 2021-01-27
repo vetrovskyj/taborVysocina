@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <title>Tábor Vysočina 3. turnus</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <meta name="Keywords" content="Tábor, tábor Vysočina, 3. turnus, letní tábor,Vysočina,PČR,děti,hry">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="nazev">
+            <a class="home" href="index.html">
+                <div class="radky">
+                    <h1 class="vysocina">Vysočina</h1>
+                    <h2 class="turnus">3. turnus</h2>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a class="link" id="odsazeni" href="O_Tabore.html">Informace</a></li>
+                <li><a class="link" href="Lide.html">Lidé</a></li>
+                <li><a class="link" href="Vylety.html">Aktuality</a></li>
+                <li><a class="link" href="gallery.html">Galerie</a></li>
+                <li><a class="link" href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a class="nadpis" href="index.html">
+                <img src="images/logo.png" alt="Vysočina logo">
+            </a>
+        </div>
+    </header>
+
+    <main class="telo">
+        <div class="top-site">
+            <div class="fotky">
+                <div class="fotka">
+                    <img class="foto foto3" id="lastClone" src="images/foto3.jpg" alt="foto3">
+                    <img class="foto foto1" src="images/foto1copy.jpg" alt="foto1">
+                    <img class="foto foto2" src="images/foto2.jpg" alt="foto2">
+                    <img class="foto foto3" src="images/foto3.jpg" alt="foto3">
+                    <img class="foto foto1" id="firstClone" src="images/foto1copy.jpg" alt="foto1">
+                </div>
+
+                <div class="sipky">
+                    <div class="leva">
+                        <input id="prevBtn" type="image" src="images/leva.png" name="leva" alt="leva-sipka" />
+                    </div>
+                    <div class="tecka">
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                        <input class="dot" type="image" src="images/dot.png" name="leva" alt="tecka-poradi-obrazku" />
+                    </div>
+                    <div class="prava">
+                        <input id="nextBtn" type="image" src="images/prava.png" name="prava" alt="prava-sipka" />
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/app.js"></script>
+
+            <div class="info">
+                <div class="text">
+                    <div class="text-heading">
+                        <h2>Zábava. Zážitky.</h2>
+                        <h2>Vysočina</h2>
+                    </div>
+                    <p>Tábor Vysočina je policejní <strong>tábor</strong> s dlouholetou tradicí, skvělou partou, hrami, péčí o děti a hlavně <strong>zábavou</strong>. Areál pobytu se nachází na Vysočině. K dispozici máme 3 hřiště, hlavní budovu, chatky a
+                        <strong>krásnou přírodu.</strong></p>
+                </div>
+                <div class="btn">
+                    <a class="tlacitko" href="#bottom-site">Čti více</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-site" id="bottom-site">
+            <div class="boxes">
+                <div class="box transition">
+                    <img alt="ikona kamaradu" src="./images/kamaradi_ikona.svg" width="100">
+                    <div class="box-desc">
+                        <h2>Kamarádi</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                    </div>
+                </div>
+                <div class="box transition">
+                    <img alt="ikona her" src="./images/catapult_ikona.svg" width="100">
+                    <div class="box-desc">
+                        <h2>Hry</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                    </div>
+                </div>
+                <div class="box transition">
+                    <img alt="ikona dobrodruzstvi" src="./images/dobro_ikona.svg" width="100">
+                    <div class="box-desc">
+                        <h2>Dobrodružství</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="news-heading">
+                    <h2>Aktuality</h2>
+                    <img src="./images/new_ikona.svg" alt="new icon">
+                </div>
+                <div class="news-content"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="panel">
+        <p>Copyright &copy; 2020, Tábor Vysočina 3. turnus</p>
+    </footer>
+
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/smoothScroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>-->
+    <script src="./js/paste.js"></script>
+
+    <script>
+        //gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.fotky', {
+            y: '-50%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        });
+
+        tl.from('.info', {
+            y: '+30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        }, "-=2");
+
+        /*gsap.from(".box", {
+            ScrollTrigger: {
+                trigger: '.box',
+                start: "center bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+        });*/
+
+        ScrollReveal().reveal('.boxes', {
+            //delay: 500,
+            duration: 1500
+        });
+        ScrollReveal().reveal('.box', {
+            //delay: 1000,
+            interval: 200,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.news-heading', {
+            //delay: 1000,
+            duration: 1500
+        });
+        ScrollReveal().reveal('.news-content', {
+            //delay: 1000,
+            duration: 2000
+        });
+    </script>

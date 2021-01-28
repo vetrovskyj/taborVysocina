@@ -1,18 +1,24 @@
+const lightboxContainer = document.createElement('div');
+lightboxContainer.id = 'lightboxContainer';
+document.body.appendChild(lightboxContainer);
+
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
-document.body.appendChild(lightbox);
+lightboxContainer.appendChild(lightbox);
 
 const images = document.querySelectorAll('img');
 
-const prev = document.createElement('img');
-prev.src = './images/leva.png';
+const prev = document.createElement('div');
+const prevImg = document.createElement('img');
+prevImg.src = './images/leva.png';
 prev.id = 'prev';
-document.body.appendChild(prev);
+prev.appendChild(prevImg);
 
-const next = document.createElement('img');
-next.src = './images/prava.png';
+const next = document.createElement('div');
+const nextImg = document.createElement('img');
+nextImg.src = './images/prava.png';
 next.id = 'next';
-document.body.appendChild(next);
+next.appendChild(nextImg);
 
 let arr = [];
 for (let i = 0, len = images.length; i < len; i++) {
@@ -47,6 +53,7 @@ function prevItem() {
 images.forEach(image => {
     image.addEventListener('click', e => {
         lightbox.classList.add('active');
+        lightboxContainer.classList.add('active');
         next.classList.add('active');
         prev.classList.add('active');
         let img = document.createElement('img');
@@ -55,6 +62,8 @@ images.forEach(image => {
             lightbox.removeChild(lightbox.firstChild);
         };
         lightbox.appendChild(img);
+        lightbox.appendChild(prev);
+        lightbox.appendChild(next);
     });
 });
 
@@ -67,6 +76,8 @@ prev.addEventListener('click', e => {
         lightbox.removeChild(lightbox.firstChild);
     };
     lightbox.appendChild(img);
+    lightbox.appendChild(prev);
+    lightbox.appendChild(next);
 });
 
 next.addEventListener('click', e => {
@@ -75,11 +86,14 @@ next.addEventListener('click', e => {
         lightbox.removeChild(lightbox.firstChild);
     };
     lightbox.appendChild(img);
+    lightbox.appendChild(prev);
+    lightbox.appendChild(next);
 });
 
-lightbox.addEventListener('click', e => {
+lightboxContainer.addEventListener('click', e => {
     if (e.target !== e.currentTarget) return
     lightbox.classList.remove('active');
+    lightboxContainer.classList.remove('active');
     prev.classList.remove('active');
     next.classList.remove('active');
 });

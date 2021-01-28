@@ -1,6 +1,6 @@
 window.onload = function() {
     // Allow assets directory listings
-    let folder = "../taborVysocina/images/Album";
+    let folder = "../images/Album";
 
     const lightbox = document.createElement('div');
     lightbox.id = 'lightbox';

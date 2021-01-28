@@ -14,7 +14,7 @@ button {
 }
 
 header {
-    height: 10vh;
+    min-height: 10vh;
     display: flex;
     align-items: center;
     background-color: #ff6666;
@@ -85,7 +85,7 @@ nav {
     width: 85%;
     display: flex;
     margin: 40px auto;
-    height: 75vh;
+    min-height: 75vh;
     justify-content: center;
 }
 
@@ -179,14 +179,12 @@ textarea {
 }
 
 .panel {
-    height: 5vh;
     background-color: #666;
-    text-align: center;
-}
-
-.panel p {
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding-top: 10px;
 }
 
 .contacts {
@@ -332,25 +330,42 @@ svg {
 
 @media (max-width: 1000px) {
     header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        height: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 15vh;
+        margin-bottom: 20px;
+    }
+    .vysocina {
+        font-size: 24px;
+        padding: 0;
+        text-align: center;
+    }
+    .turnus {
+        font-size: 16px;
+        padding: 0;
+        text-align: center;
     }
     .nazev {
-        grid-area: "prava";
+        margin-left: 10px;
+        width: 60%;
+        min-height: 10vh;
+        align-items: center;
+        flex: auto;
     }
     .logo {
-        grid-area: "leva";
-        grid-column: 2/3;
-        grid-row: 1/2;
+        width: 40%;
+        min-height: 10vh;
+        align-items: center;
+    }
+    .nadpis img {
+        height: 8vh;
+        width: auto;
     }
     nav {
-        grid-area: "pod";
-        grid-column: 1/3;
+        order: 3;
         background-color: #666;
-        height: 5vh;
-        align-self: center;
+        min-height: 5vh;
+        align-self: flex-end;
     }
     .menu {
         text-align: center;
@@ -385,7 +400,36 @@ svg {
         height: 300px;
     }
     .kontakt h1 {
-        font-size: 36px;
+        font-size: 32px;
+    }
+    header {
+        margin: 0;
+    }
+    .kontakt {
+        margin: 30px auto;
+    }
+    .adress {
+        margin: 0 0 30px 0;
+    }
+    #map {
+        margin: 20px 0;
+    }
+    .pole {
+        margin: 20px 0 0 0;
+        grid-template-rows: 40px 15px 40px 15px 40px 15px 150px 15px auto;
+    }
+    .tlacitko {
+        height: 40px;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 0;
+        display: inline-block;
+        line-height: 40px;
+        width: 100px;
+        text-align: center;
+    }
+    .rotation-back {
+        height: 100%;
     }
 }
 
@@ -398,6 +442,26 @@ svg {
     }
     .contact img {
         margin: 0 auto;
+        width: 40px;
+    }
+    .kontakt {
+        margin: 20px auto;
+    }
+    .adress {
+        margin: 0 0 20px 0;
+    }
+    #map {
+        margin: 15px 0;
+    }
+    .pole {
+        margin: 15px 0 0 0;
+    }
+    .pole input,
+    .pole textarea {
+        font-size: 14px;
+    }
+    .contacts {
+        margin: 0 auto 20px auto;
     }
 }
 
@@ -410,6 +474,35 @@ svg {
     }
     .panel p {
         font-size: 12px;
-        padding-top: 15px;
+    }
+    .kontakt {
+        width: 90%;
+    }
+    .contacts {
+        width: 80.5%;
+    }
+}
+
+@media (max-width:380px) {
+    .adresa p {
+        font-size: 16px;
+    }
+    .contact-entity {
+        font-size: 12px;
+    }
+    .kontakt {
+        width: 95%;
+    }
+    .contacts {
+        width: 85.5%;
+    }
+    .contact img {
+        width: 40px;
+    }
+}
+
+@media (max-width:350px) {
+    .link {
+        font-size: 12px;
     }
 }

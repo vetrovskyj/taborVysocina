@@ -319,7 +319,6 @@ input:focus {
 }
 
 .news {
-    min-height: 80vh;
     background-color: #d3d3d3;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
@@ -513,7 +512,7 @@ input:focus {
     nav {
         order: 3;
         background-color: #666;
-        min-height: 5vh;
+        height: 5vh;
         align-self: flex-end;
     }
     .menu {
@@ -688,6 +687,9 @@ input:focus {
     .panel p {
         font-size: 12px;
     }
+    .news-content {
+        padding: 10px;
+    }
 }
 
 @media (max-width:500px) {
@@ -724,6 +726,9 @@ input:focus {
     }
     .link {
         font-size: 12px;
+    }
+    .news-content {
+        padding: 5px;
     }
 }
 

@@ -364,7 +364,7 @@ svg {
     nav {
         order: 3;
         background-color: #666;
-        min-height: 5vh;
+        height: 5vh;
         align-self: flex-end;
     }
     .menu {

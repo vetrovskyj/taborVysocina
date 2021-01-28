@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    height: 10vh;
+    min-height: 10vh;
     display: flex;
     align-items: center;
     background-color: #ff6666;
@@ -20,10 +20,6 @@ header {
 .menu,
 .logo {
     display: flex;
-}
-
-.nazev {
-    flex: 1;
 }
 
 .turnus {
@@ -39,6 +35,10 @@ header {
 
 nav {
     flex: 2;
+}
+
+.nazev {
+    flex: 1;
 }
 
 .logo {
@@ -115,11 +115,11 @@ nav {
 }
 
 #prevBtn {
-    width: 70%;
+    width: 15px;
 }
 
 #nextBtn {
-    width: 70%;
+    width: 15px;
 }
 
 .dot {
@@ -171,7 +171,6 @@ input:focus {
     float: right;
     background-color: transparent;
     color: #ff6666;
-    height: 30px;
     border: 2px solid #ff6666;
     width: 150px;
     height: 50px;
@@ -195,7 +194,8 @@ input:focus {
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
-    height: 90vh;
+    min-height: 90vh;
+    padding: 20px 0;
 }
 
 .bottom-site {
@@ -204,7 +204,7 @@ input:focus {
 
 .boxes {
     background-color: #ff6666;
-    height: 75vh;
+    min-height: 75vh;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
     grid-template-rows: 1fr 4fr;
@@ -242,15 +242,15 @@ input:focus {
 }
 
 .panel {
-    height: 5vh;
     background-color: #666;
-    ;
-    text-align: center;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .panel p {
     color: white;
-    padding-top: 10px;
 }
 
 #lightbox {
@@ -319,7 +319,7 @@ input:focus {
 }
 
 .news {
-    height: 80vh;
+    min-height: 80vh;
     background-color: #d3d3d3;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
@@ -407,7 +407,7 @@ input:focus {
     margin-top: 10px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width:1500px) {
     .boxes {
         grid-template-columns: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
     }
@@ -422,17 +422,20 @@ input:focus {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width:1250px) {
     .boxes {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
         align-items: center;
-        height: 90vh;
         margin: 5vh 0 0 0;
     }
     .news {
-        height: 60vh;
-        grid-template-rows: 10vh 50vh;
+        height: 100%;
+        grid-template-rows: auto;
+        padding: 50px 0 0 0;
+    }
+    .news-content {
+        margin-bottom: 20px;
     }
     .box {
         display: flex;
@@ -440,13 +443,17 @@ input:focus {
         justify-content: space-around;
         align-items: center;
         margin-bottom: 0;
-        padding: 20px;
+        padding: 5px 15px 30px 15px;
         width: 90%;
         height: 80%;
         margin: auto;
     }
     .box img {
         margin-right: 20px;
+        width: 15%;
+    }
+    .box-desc {
+        width: 85%;
     }
     .box:nth-child(1) {
         grid-column: 1/2;
@@ -462,8 +469,8 @@ input:focus {
         margin-bottom: 50px;
     }
     .box:nth-child(2) img {
-        width: 200px;
         margin: 0;
+        width: 30%;
     }
     .box:nth-child(3) {
         grid-column: 1/2;
@@ -471,27 +478,43 @@ input:focus {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
     header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        height: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 15vh;
+    }
+    .vysocina {
+        font-size: 24px;
+        padding: 0;
+        text-align: center;
+    }
+    .turnus {
+        font-size: 16px;
+        padding: 0;
+        text-align: center;
     }
     .nazev {
-        grid-area: "prava";
+        margin-left: 10px;
+        width: 60%;
+        min-height: 10vh;
+        align-items: center;
+        flex: auto;
     }
     .logo {
-        grid-area: "leva";
-        grid-column: 2/3;
-        grid-row: 1/2;
+        width: 40%;
+        min-height: 10vh;
+        align-items: center;
+    }
+    .nadpis img {
+        height: 8vh;
+        width: auto;
     }
     nav {
-        grid-area: "pod";
-        grid-column: 1/3;
+        order: 3;
         background-color: #666;
-        height: 5vh;
-        align-self: center;
+        min-height: 5vh;
+        align-self: flex-end;
     }
     .menu {
         text-align: center;
@@ -505,7 +528,7 @@ input:focus {
         width: 640px;
     }
     .top-site {
-        height: 85vh;
+        min-height: 85vh;
     }
     .boxes {
         grid-template-columns: 3fr 2fr;
@@ -513,7 +536,7 @@ input:focus {
     }
     .box-desc h2 {
         padding: 15px 0;
-        font-size: 32px;
+        font-size: 24px;
     }
     .box p {
         font-size: 16px;
@@ -521,16 +544,41 @@ input:focus {
     .vylet p {
         font-size: 16px;
     }
+    .top-site {
+        height: 100%;
+    }
+    .fotka {
+        height: 50%;
+    }
+    .boxes {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        margin: 5vh 0 0 0;
+    }
+    .tlacitko {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .box:nth-child(2) .box-desc h2 {
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width: 850px) {
+@media (max-width:850px) {
     .boxes {
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
+        height: 100%;
     }
     .box {
         height: 30%;
-        margin-bottom: -30px;
+        margin: 40px 0 -20px 0;
+    }
+    .box:nth-child(1) {
+        margin-top: 20px;
     }
     .box:nth-child(2) {
         grid-column: 2/3;
@@ -542,11 +590,12 @@ input:focus {
         margin-bottom: initial;
     }
     .box:nth-child(2) img {
-        width: 100px;
+        margin-right: 20px;
+        width: 15%;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width:700px) {
     .info {
         width: 480px;
     }
@@ -560,7 +609,7 @@ input:focus {
     }
     .text-heading {
         flex-direction: column;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
     .text-heading h2:first-child {
         margin-bottom: 0;
@@ -569,26 +618,56 @@ input:focus {
         margin-bottom: 0;
     }
     .text p {
-        font-size: 16px;
+        font-size: 14px;
+        text-align: initial;
+    }
+    .text-heading h2:last-child {
+        font-size: 32px;
     }
     .news {
-        grid-template-rows: 10vh 10vh 1fr;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 10fr 1fr 1fr;
+        padding: 0;
     }
     .news-heading {
-        grid-row: 2/3;
+        grid-row: 1/2;
         flex-direction: row;
+        align-items: flex-end;
+    }
+    .news-heading h2 {
+        margin: 40px 0 15px 0;
+        font-size: 32px;
     }
     .news-heading img {
         margin: 0 0 0 20px;
         width: 50px;
+        margin-bottom: 10px;
     }
     .news-content {
-        grid-row: 3/4;
-        grid-column: 2/7;
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+    .vylet a {
+        font-size: 16px;
+    }
+    .vylet p {
+        font-size: 14px;
+        margin: 0;
+    }
+    .vylet {
+        padding-bottom: 10px;
+    }
+    .nazev_vyletu {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .vylet:first-child .nazev_vyletu {
+        padding: 0;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width:550px) {
     .link {
         font-size: 14px;
     }
@@ -608,11 +687,16 @@ input:focus {
     }
     .panel p {
         font-size: 12px;
-        padding-top: 15px;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width:500px) {
+    .panel p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:450px) {
     .fotky {
         width: 300px;
     }
@@ -624,12 +708,47 @@ input:focus {
     .text-heading h2 {
         font-size: 32px;
     }
-    .box img {
-        width: 50px;
-        height: 50px;
-    }
     .box:nth-child(2) img {
-        width: 50px;
         margin-right: 20px;
+    }
+}
+
+@media (max-width:350px) {
+    .fotky {
+        width: 250px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 250px;
+    }
+    .link {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .fotky {
+        width: 200px;
+    }
+    .foto1,
+    .foto2,
+    .foto3 {
+        width: 200px;
+    }
+    .news-heading {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-height:650px) {
+    .text-heading h2:last-child {
+        font-size: 24px;
+    }
+    .text-heading h2 {
+        font-size: 24px;
+    }
+    .tlacitko {
+        margin-top: 15px;
     }
 }

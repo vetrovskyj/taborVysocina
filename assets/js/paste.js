@@ -4,7 +4,7 @@ window.onload = function() {
         content.classList.add('content-item');
 
         const newsContent = document.querySelector('.news-content');
-        $(content).load('../../aktuality/index.html .vylet:lt(3)');
+        $(content).load('/aktuality/index.html .vylet:lt(3)');
         newsContent.appendChild(content);
     }
     /*const contentTextArea = document.createElement('p');

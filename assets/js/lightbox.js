@@ -10,13 +10,13 @@ const images = document.querySelectorAll('img');
 
 const prev = document.createElement('div');
 const prevImg = document.createElement('img');
-prevImg.src = './images/leva.png';
+prevImg.src = '../../assets/images/leva.png';
 prev.id = 'prev';
 prev.appendChild(prevImg);
 
 const next = document.createElement('div');
 const nextImg = document.createElement('img');
-nextImg.src = './images/prava.png';
+nextImg.src = '../../assets/images/prava.png';
 next.id = 'next';
 next.appendChild(nextImg);
 

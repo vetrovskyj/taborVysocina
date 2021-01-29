@@ -287,3 +287,12 @@ main {
         margin: 0 5px;
     }
 }
+
+@media (max-height:390px) {
+    nav {
+        min-height: 20px;
+    }
+    .nadpis img {
+        height: 40px;
+    }
+}

@@ -273,7 +273,7 @@ nav {
     .menu {
         text-align: center;
         align-items: center;
-        min-height: 100%;
+        height: 100%;
     }
     .kapitola {
         margin-top: 30px;
@@ -373,5 +373,14 @@ nav {
 @media (max-width:350px) {
     .link {
         font-size: 12px;
+    }
+}
+
+@media (max-height:390px) {
+    nav {
+        min-height: 20px;
+    }
+    .nadpis img {
+        height: 40px;
     }
 }

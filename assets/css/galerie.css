@@ -81,6 +81,10 @@ nav {
     color: yellow;
 }
 
+main {
+    padding-bottom: 20px;
+}
+
 .panel {
     background-color: #666;
     min-height: 5vh;
@@ -100,9 +104,18 @@ nav {
 .years-preview {
     display: flex;
     align-items: center;
-    overflow-x: hidden;
     width: 100%;
     margin: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.years-preview::-webkit-scrollbar {
+    display: none;
 }
 
 .years-section {

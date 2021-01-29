@@ -1,5 +1,0 @@
-Navigace mění polohu kvůi scrollbaru -> idálně jí vycentrovat
-
-Header sení height responsive
-
-Na mainu se při změnšení widthu necentruje slider automaticky, ale až po refreshu

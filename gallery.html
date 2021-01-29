@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/gallery.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -151,4 +152,14 @@
     </footer>
 
     <script src="./js/slider.js"></script>
+    <script>
+        ScrollReveal().reveal('.years-section', {
+            //delay: 1000,
+            interval: 300,
+        });
+        ScrollReveal().reveal('.years-item-container', {
+            //delay: 1000,
+            interval: 100,
+        });
+    </script>
 </body>

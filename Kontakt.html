@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Tábor, tábor Vysočina, 3. turnus, letní tábor,Vysočina,PČR,děti,hry">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" type="text/css" href="css/Kontakt.css">
     <script src="https://api.mapy.cz/loader.js"></script>
     <script>
@@ -41,7 +42,7 @@
     </header>
 
     <main class="telo">
-        <div class="kontakt">
+        <div class="kontakt scroll-reveal-contact">
             <div class="adress">
                 <div>
                     <h1 class="titulek1">Kde nás najdete?</h1>
@@ -67,7 +68,7 @@
                 </script>
             </div>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./kontakt.html';}"></iframe>
-            <div class="formular">
+            <div class="formular scroll-reveal-contact">
                 <h1 class="titulek2">Napište nám email</h1>
                 <!--<form class="pole" action="kontaktni_formular.php" method="post">
                 <form class="pole" action="https://formspree.io/f/mjvpakvj" method="POST">-->
@@ -82,7 +83,7 @@
                 </form>
             </div>
         </div>
-        <div class="contacts">
+        <div class="contacts scroll-reveal-contact">
             <div class="rotation-back">
                 <div class="contact">
                     <img src="./images/man-in-suit-and-tie.svg" width="50" alt="person icon">
@@ -109,3 +110,9 @@
     </footer>
 
     <script src="./js/email.js"></script>
+    <script>
+        ScrollReveal().reveal('.scroll-reveal-contact', {
+            delay: 300,
+            interval: 400,
+        });
+    </script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="zxx">
 
 <head>
     <title>Tábor Vysočina 3. turnus</title>
@@ -8,6 +8,7 @@
     <meta name="Keywords" content="Tábor, tábor Vysočina, 3. turnus, letní tábor,Vysočina,PČR,děti,hry">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style_O_Tabore.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -85,30 +86,30 @@
         <div class="grid">
             <!--<h1 class="kapitola">Zázemí tábora</h1>-->
 
-            <div class="areal" id="areal">
+            <div class="areal scroll-reveal-ambiente" id="areal">
                 <h2>Areál</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam excepturi tempora nihil id accusamus magnam soluta ipsa, modi repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae alias quia.</p>
             </div>
 
-            <div class="arealFoto" id="arealFoto">
+            <div class="arealFoto scroll-reveal-ambiente" id="arealFoto">
                 <img src="images/budova.jpg" alt="budova">
             </div>
 
-            <div class="vybaveni" id="vybaveni">
+            <div class="vybaveni scroll-reveal-ambiente" id="vybaveni">
                 <h2>Vybavení</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam excepturi tempora nihil id accusamus magnam soluta ipsa, modi repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae alias quia.</p>
             </div>
 
-            <div class="vybaveniFoto" id="vybaveniFoto">
+            <div class="vybaveniFoto scroll-reveal-ambiente" id="vybaveniFoto">
                 <img src="images/hriste.jpg" alt="hriste">
             </div>
 
-            <div class="okoli" id="okoli">
+            <div class="okoli scroll-reveal-ambiente" id="okoli">
                 <h2>Okolí</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam excepturi tempora nihil id accusamus magnam soluta ipsa, modi repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae alias quia.</p>
             </div>
 
-            <div class="okoliFoto" id="okoliFoto">
+            <div class="okoliFoto scroll-reveal-ambiente" id="okoliFoto">
                 <img src="images/rybnik.jpg" alt="rybnik">
             </div>
         </div>
@@ -194,3 +195,23 @@
     </footer>
 
     <script src="./js/smoothScroll.js"></script>
+    <script>
+        ScrollReveal().reveal('.questions', {
+            //delay: 500,
+            duration: 1500
+        });
+        ScrollReveal().reveal('.scroll-reveal-ambiente', {
+            //delay: 1000,
+            interval: 200,
+            duration: 1200
+        });
+        ScrollReveal().reveal('.card', {
+            //delay: 1000,
+            interval: 200,
+            duration: 1200
+        });
+        ScrollReveal().reveal('.visits-posts', {
+            //delay: 1000,
+            duration: 2000
+        });
+    </script>

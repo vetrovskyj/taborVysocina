@@ -107,6 +107,10 @@ nav {
     text-decoration: none;
 }
 
+.vylet a:hover {
+    color: rgb(253, 169, 74);
+}
+
 .nazev_vyletu {
     grid-area: box1;
 }

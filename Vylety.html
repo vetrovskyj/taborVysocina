@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/Vylety.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -88,7 +89,14 @@
 
     <script src="./js/articles.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/smoothScroll.js"></script>
 
     <footer class="panel">
         <p>Copyright &copy; 2020, Tábor Vysočina 3. turnus</p>
     </footer>
+
+    <script>
+        ScrollReveal().reveal('.vylet', {
+            interval: 200,
+        });
+    </script>

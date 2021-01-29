@@ -192,7 +192,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40vh;
+    min-height: 40vh;
     /*transform: rotate(-1deg);*/
     overflow: hidden;
     width: 85%;
@@ -320,7 +320,6 @@ svg {
     }
     .rotation-back {
         flex-wrap: wrap;
-        height: 90%;
     }
     .contact {
         width: 49%;
@@ -429,7 +428,7 @@ svg {
         text-align: center;
     }
     .rotation-back {
-        height: 100%;
+        min-height: 35vh;
     }
 }
 
@@ -480,6 +479,10 @@ svg {
     }
     .contacts {
         width: 80.5%;
+        min-height: 25vh;
+    }
+    .rotation-back {
+        min-width: 20vh;
     }
 }
 
@@ -513,5 +516,11 @@ svg {
     }
     .nadpis img {
         height: 40px;
+    }
+}
+
+@media (max-height:550px) {
+    .contact {
+        margin: 5px 0;
     }
 }

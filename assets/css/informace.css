@@ -147,6 +147,15 @@ nav {
     margin-top: 30px;
 }
 
+.panel p {
+    font-size: 14px;
+}
+
+.fa {
+    font-size: 14px;
+    display: flex;
+}
+
 .telo {
     display: grid;
     justify-items: center;
@@ -348,6 +357,7 @@ nav {
     position: absolute;
     right: 0;
     margin-right: 10px;
+    max-height: 95%;
 }
 
 @media (max-width:1500px) {
@@ -557,6 +567,12 @@ nav {
     .panel p {
         font-size: 12px;
     }
+    .panel p {
+        font-size: 12px;
+    }
+    .fa {
+        font-size: 12px;
+    }
 }
 
 @media (max-width:460px) {
@@ -634,6 +650,13 @@ nav {
     .visits-posts h3 {
         font-size: 16px;
     }
+    .panel p {
+        font-size: 11px;
+    }
+    .fa {
+        font-size: 11px;
+        display: flex;
+    }
 }
 
 @media (max-width:310px) {
@@ -657,5 +680,12 @@ nav {
     }
     .nadpis img {
         height: 40px;
+    }
+}
+
+@media (max-height:650px) {
+    .fa {
+        font-size: 11px;
+        display: flex;
     }
 }

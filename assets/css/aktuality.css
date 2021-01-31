@@ -156,11 +156,21 @@ nav {
     color: white;
 }
 
+.fa {
+    font-size: 14px;
+    display: flex;
+}
+
+.panel p {
+    font-size: 14px;
+}
+
 .facebook {
     color: white;
     position: absolute;
     right: 0;
     margin-right: 10px;
+    max-height: 95%;
 }
 
 @media (max-width: 1500px) {
@@ -318,6 +328,10 @@ nav {
     .panel p {
         font-size: 12px;
     }
+    .fa {
+        font-size: 12px;
+        display: flex;
+    }
 }
 
 @media (max-width: 450px) {
@@ -347,6 +361,12 @@ nav {
     }
     .vylet {
         width: 92%;
+    }
+    .panel p {
+        font-size: 11px;
+    }
+    .fa {
+        font-size: 11px;
     }
 }
 

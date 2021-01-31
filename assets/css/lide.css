@@ -197,11 +197,21 @@ nav {
     color: white;
 }
 
+.panel p {
+    font-size: 14px;
+}
+
+.fa {
+    font-size: 14px;
+    display: flex;
+}
+
 .facebook {
     color: white;
     position: absolute;
     right: 0;
     margin-right: 10px;
+    max-height: 95%;
 }
 
 @media (max-width: 1600px) {
@@ -342,6 +352,10 @@ nav {
     .osoba {
         width: 85%;
     }
+    .fa {
+        font-size: 12px;
+        display: flex;
+    }
 }
 
 @media (max-width: 500px) {
@@ -381,6 +395,13 @@ nav {
     .link {
         font-size: 12px;
     }
+    .panel p {
+        font-size: 11px;
+    }
+    .fa {
+        font-size: 11px;
+        display: flex;
+    }
 }
 
 @media (max-height:390px) {
@@ -389,5 +410,12 @@ nav {
     }
     .nadpis img {
         height: 40px;
+    }
+}
+
+@media (max-height:650px) {
+    .fa {
+        font-size: 11px;
+        display: flex;
     }
 }

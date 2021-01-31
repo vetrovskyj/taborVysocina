@@ -250,7 +250,13 @@ input:focus {
 }
 
 .panel p {
+    font-size: 14px;
     color: white;
+}
+
+.fa {
+    font-size: 14px;
+    display: flex;
 }
 
 .facebook {
@@ -258,6 +264,7 @@ input:focus {
     position: absolute;
     right: 0;
     margin-right: 10px;
+    max-height: 95%;
 }
 
 #lightbox {
@@ -746,9 +753,6 @@ input:focus {
     .foto3 {
         width: 400px;
     }
-    .panel p {
-        font-size: 12px;
-    }
     .news-content {
         padding: 10px;
     }
@@ -757,6 +761,10 @@ input:focus {
 @media (max-width:500px) {
     .panel p {
         font-size: 12px;
+    }
+    .fa {
+        font-size: 12px;
+        display: flex;
     }
 }
 
@@ -792,6 +800,13 @@ input:focus {
     .news-content {
         padding: 5px;
     }
+    .panel p {
+        font-size: 11px;
+    }
+    .fa {
+        font-size: 11px;
+        display: flex;
+    }
 }
 
 @media only screen and (max-width:350px) {
@@ -817,6 +832,10 @@ input:focus {
     }
     .tlacitko {
         margin-top: 15px;
+    }
+    .fa {
+        font-size: 11px;
+        display: flex;
     }
 }
 

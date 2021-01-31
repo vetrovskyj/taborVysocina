@@ -192,8 +192,8 @@ textarea {
 }
 
 .fa {
-    font-size: 14px;
-    display: flex;
+    font-size: 14px !important;
+    display: flex !important;
 }
 
 .contacts {
@@ -502,7 +502,7 @@ svg {
         min-width: 20vh;
     }
     .fa {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 
@@ -532,8 +532,8 @@ svg {
         font-size: 11px;
     }
     .fa {
-        font-size: 11px;
-        display: flex;
+        font-size: 11px !important;
+        display: flex !important;
     }
 }
 

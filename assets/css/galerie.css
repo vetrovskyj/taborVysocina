@@ -99,8 +99,8 @@ main {
 }
 
 .fa {
-    font-size: 14px;
-    display: flex;
+    font-size: 14px !important;
+    display: flex !important;
 }
 
 .years-preview-container {
@@ -288,7 +288,7 @@ main {
         margin: 0 10px;
     }
     .fa {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 
@@ -310,7 +310,7 @@ main {
         font-size: 11px;
     }
     .fa {
-        font-size: 11px;
+        font-size: 11px !important;
     }
 }
 

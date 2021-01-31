@@ -157,8 +157,8 @@ nav {
 }
 
 .fa {
-    font-size: 14px;
-    display: flex;
+    font-size: 14px !important;
+    display: flex !important;
 }
 
 .panel p {
@@ -329,8 +329,8 @@ nav {
         font-size: 12px;
     }
     .fa {
-        font-size: 12px;
-        display: flex;
+        font-size: 12px !important;
+        display: flex !important;
     }
 }
 
@@ -366,7 +366,7 @@ nav {
         font-size: 11px;
     }
     .fa {
-        font-size: 11px;
+        font-size: 11px !important;
     }
 }
 

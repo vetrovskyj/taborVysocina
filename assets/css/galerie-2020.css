@@ -234,6 +234,13 @@ nav {
     color: white;
 }
 
+.facebook {
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
 @media (max-width: 1200px) {
     .grid {
         /*Prevent vertical gaps */

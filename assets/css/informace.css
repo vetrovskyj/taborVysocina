@@ -343,6 +343,13 @@ nav {
     grid-column: 2/3;
 }
 
+.facebook {
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
 @media (max-width:1500px) {
     .hygiene {
         grid-column: 1/3;

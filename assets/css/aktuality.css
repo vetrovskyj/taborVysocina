@@ -156,6 +156,13 @@ nav {
     color: white;
 }
 
+.facebook {
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
 @media (max-width: 1500px) {
     .vylet {
         max-height: 280px;

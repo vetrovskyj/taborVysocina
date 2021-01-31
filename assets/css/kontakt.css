@@ -278,6 +278,13 @@ svg {
     display: none;
 }
 
+.facebook {
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
 @media (max-width: 1300px) {
     .adresa p {
         display: block;

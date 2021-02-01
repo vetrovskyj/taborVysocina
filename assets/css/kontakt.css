@@ -434,6 +434,21 @@ svg {
         margin: 20px 0 0 0;
         grid-template-rows: 40px 15px 40px 15px 40px 15px 150px 15px auto;
     }
+    .alert-name {
+        font-size: 10px;
+        background-size: 12px;
+        text-indent: 15px;
+    }
+    .alert-subject {
+        font-size: 10px;
+        background-size: 12px;
+        text-indent: 15px;
+    }
+    .alert-email {
+        font-size: 10px;
+        background-size: 12px;
+        text-indent: 15px;
+    }
     .tlacitko {
         height: 40px;
         font-size: 14px;
@@ -534,6 +549,30 @@ svg {
     .fa {
         font-size: 11px !important;
         display: flex !important;
+    }
+    .alert-name {
+        font-size: 9px;
+        background-size: 12px;
+        text-indent: 14px;
+    }
+    .alert-subject {
+        font-size: 9px;
+        background-size: 12px;
+        text-indent: 14px;
+    }
+    .alert-email {
+        font-size: 9px;
+        background-size: 12px;
+        text-indent: 14px;
+    }
+    .contacts {
+        width: 91.2%;
+    }
+    .adress {
+        width: 96%;
+    }
+    .formular {
+        width: 96%;
     }
 }
 

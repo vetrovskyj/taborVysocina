@@ -6,10 +6,10 @@ let nameAlert = document.createElement('p');
 function validateName() {
     var name = document.getElementById('jmeno').value;
 
-    if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+    if (!name.match(/^(?:\b[A-Ž]+\b[\s\r\n]*){2,4}$/)) {
         nameAlert.classList.remove('hide-alert');
         nameAlert.classList.add('alert-name');
-        nameAlert.innerText = 'Prosím zadejte platné jméno';
+        nameAlert.innerText = 'Prosím zadejte platné jméno a příjmení (max 4 slova)';
         var nameInput = document.querySelector('.pole');
         nameInput.appendChild(nameAlert);
         emailAlert.classList.add('hide-alert');
@@ -58,14 +58,10 @@ function validateEmail() {
 function validateSubject() {
     var subject = document.getElementById('predmet').value;
 
-    if (subject.length == 0) {
-        return true;
-    }
-
-    if (!subject.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+    if (!subject.match(/^(?:\b[A-Ž]+\b[\s\r\n]*){0,5}$/)) {
         subjectAlert.classList.remove('hide-alert');
         subjectAlert.classList.add('alert-subject');
-        subjectAlert.innerText = 'Prosím používejte jen písmena v předmětu';
+        subjectAlert.innerText = 'Předmět může mít max 5 slov';
         var subjectInput = document.querySelector('.pole');
         subjectInput.appendChild(subjectAlert);
         return false;

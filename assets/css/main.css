@@ -763,8 +763,8 @@ input:focus {
         font-size: 12px;
     }
     .fa {
-        font-size: 12px;
-        display: flex;
+        font-size: 12px !important;
+        display: flex !important;
     }
 }
 
@@ -834,8 +834,8 @@ input:focus {
         margin-top: 15px;
     }
     .fa {
-        font-size: 11px !important;
-        display: flex !important;
+        font-size: 11px;
+        display: flex;
     }
 }
 

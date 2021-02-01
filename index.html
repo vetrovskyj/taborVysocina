@@ -129,48 +129,50 @@
     <script src="./assets/js/paste.js"></script>
 
     <script>
-        //gsap.registerPlugin(ScrollTrigger);
-        var tl = gsap.timeline();
+        $(document).ready(() => {
+            //gsap.registerPlugin(ScrollTrigger);
+            var tl = gsap.timeline();
 
-        tl.from('.fotky', {
-            y: '-50%',
-            opacity: 0,
-            duration: 2,
-            ease: Power4.easeOut
-        });
+            tl.from('.fotky', {
+                y: '-50%',
+                opacity: 0,
+                duration: 2,
+                ease: Power4.easeOut
+            });
 
-        tl.from('.info', {
-            y: '+30%',
-            opacity: 0,
-            duration: 2,
-            ease: Power4.easeOut
-        }, "-=2");
+            tl.from('.info', {
+                y: '+30%',
+                opacity: 0,
+                duration: 2,
+                ease: Power4.easeOut
+            }, "-=2");
 
-        /*gsap.from(".box", {
-            ScrollTrigger: {
-                trigger: '.box',
-                start: "center bottom"
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-        });*/
+            /*gsap.from(".box", {
+                ScrollTrigger: {
+                    trigger: '.box',
+                    start: "center bottom"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+            });*/
 
-        ScrollReveal().reveal('.boxes', {
-            //delay: 500,
-            duration: 1500
-        });
-        ScrollReveal().reveal('.box', {
-            //delay: 1000,
-            interval: 200,
-            duration: 1000
-        });
-        ScrollReveal().reveal('.news-heading', {
-            //delay: 1000,
-            duration: 1500
-        });
-        ScrollReveal().reveal('.news-content', {
-            //delay: 1000,
-            duration: 2000
+            ScrollReveal().reveal('.boxes', {
+                //delay: 500,
+                duration: 1500
+            });
+            ScrollReveal().reveal('.box', {
+                //delay: 1000,
+                interval: 200,
+                duration: 1000
+            });
+            ScrollReveal().reveal('.news-heading', {
+                //delay: 1000,
+                duration: 1500
+            });
+            ScrollReveal().reveal('.news-content', {
+                //delay: 1000,
+                duration: 2000
+            });
         });
     </script>

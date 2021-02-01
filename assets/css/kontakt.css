@@ -293,6 +293,7 @@ svg {
     right: 0;
     margin-right: 10px;
     max-height: 95%;
+    text-decoration: none;
 }
 
 @media (max-width: 1300px) {

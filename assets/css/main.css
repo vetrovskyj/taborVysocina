@@ -265,6 +265,7 @@ input:focus {
     right: 0;
     margin-right: 10px;
     max-height: 95%;
+    text-decoration: none;
 }
 
 #lightbox {
